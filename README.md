@@ -18,6 +18,7 @@ git clone -b gh-pages https://github.com/chcheng3/canudax-tests.git gh-pages
 
 export ACCELERATOR=cpu
 export REAL_PRECISION=real64
+export MODE=optimize
 
 bash scripts/scripts/download.sh
 bash scripts/scripts/build.sh

@@ -21,7 +21,7 @@ jobs:
     strategy:
       matrix:
         accelerator: [cpu, cuda, rocm, oneapi]
-        real-precision: [real64, real64]
+        real-precision: [real64]
         mode: [debug, optimize]
         exclude:
           - {accelerator: rocm, real-precision: real32}

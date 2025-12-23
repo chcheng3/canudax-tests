@@ -19,19 +19,19 @@ export OMPI_ALLOW_RUN_AS_ROOT_CONFIRM=1
 time ./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" create-run TestJob01_temp_1 --cores 1 --num-threads 2 --testsuite --select-tests=CanudaX_Lean
 ONEPROC_DIR="$(./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" get-output-dir TestJob01_temp_1)/TEST/sim"
 
-# time ./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" create-run TestJob01_temp_2 --cores 2 --num-threads 1 --testsuite --select-tests=CanudaX_Lean
-# TWOPROC_DIR="$(./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" get-output-dir TestJob01_temp_2)/TEST/sim"
+time ./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" create-run TestJob01_temp_2 --cores 2 --num-threads 1 --testsuite --select-tests=CanudaX_Lean
+TWOPROC_DIR="$(./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECISION" get-output-dir TestJob01_temp_2)/TEST/sim"
 
 # # Parse results and generate plots
-# cd "$PAGESSPACE"
-# python3 "$CANUDAXSPACE/scripts/store.py" "$WORKSPACE/Cactus/repos/canudax_lean" "$ONEPROC_DIR"
-# python3 "$CANUDAXSPACE/scripts/logpage.py" "$WORKSPACE/Cactus/repos/canudax_lean"
-# 
+cd "$PAGESSPACE"
+python3 "$CANUDAXSPACE/scripts/store.py" "$WORKSPACE/Cactus/repos/canudax_lean" "$ONEPROC_DIR" "$TWOPROC_DIR"
+python3 "$CANUDAXSPACE/scripts/logpage.py" "$WORKSPACE/Cactus/repos/canudax_lean"
+
 # # Store HTML results
-# git add docs
-# git add records
-# git add test_nums.csv
-# git commit -m "Add new test result" && git push
+git add docs
+git add records
+git add test_nums.csv
+git commit -m "Add new test result" && git push
 
 # Show all log, output, and error files
 echo 'All log files:'
