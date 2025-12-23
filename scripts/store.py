@@ -96,7 +96,9 @@ def store_version(next_build):
         This stores the version of the current build
         in the list of build numbers file.
     '''
-    with open("./docs/version.txt",'a') as vers:
+    file_path = "./docs/"
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path+"version.txt",'a') as vers:
         vers.write(f"{next_build}\n")
 
 def get_commit_id(version):
