@@ -10,11 +10,11 @@ cd "$WORKSPACE"
 cd Cactus
 
 # Set up SimFactory
-cp "$CANUDAXSPACE/scripts/actions-$ACCELERATOR-$REAL_PRECISION.cfg" ./simfactory/mdb/optionlists
-cp "$CANUDAXSPACE/scripts/actions-$ACCELERATOR-$REAL_PRECISION.ini" ./simfactory/mdb/machines
-cp "$CANUDAXSPACE/scripts/actions-$ACCELERATOR-$REAL_PRECISION.run" ./simfactory/mdb/runscripts
-cp "$CANUDAXSPACE/scripts/actions-$ACCELERATOR-$REAL_PRECISION.sub" ./simfactory/mdb/submitscripts
-./simfactory/bin/sim setup-silent --optionlist $CANUDAXSPACE/scripts/actions-$ACCELERATOR-$REAL_PRECISION.cfg
+cp "$CANUDAXSPACE/actions-$ACCELERATOR-$REAL_PRECISION.cfg" ./simfactory/mdb/optionlists
+cp "$CANUDAXSPACE/actions-$ACCELERATOR-$REAL_PRECISION.ini" ./simfactory/mdb/machines
+cp "$CANUDAXSPACE/actions-$ACCELERATOR-$REAL_PRECISION.run" ./simfactory/mdb/runscripts
+cp "$CANUDAXSPACE/actions-$ACCELERATOR-$REAL_PRECISION.sub" ./simfactory/mdb/submitscripts
+./simfactory/bin/sim setup-silent --optionlist $CANUDAXSPACE/actions-$ACCELERATOR-$REAL_PRECISION.cfg
 
 # For Formaline
 git config --global user.email "maintainers@einsteintoolkit.org"
