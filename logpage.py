@@ -8,7 +8,7 @@ from datetime import datetime
 from bokeh.models.annotations import Legend
 import bokeh.plotting as bplt
 import bokeh.models.tools as btools
-from bokeh.models import Panel, Tabs, DataRange1d
+from bokeh.models import TabPanel, Tabs, DataRange1d
 import bokeh.models.callbacks as bcall
 from bokeh.resources import CDN
 from bokeh.embed import components
@@ -235,7 +235,7 @@ def plot_test_data(readfile):
     
 
     # The graphs are displayed in a tabs and this part sets that up
-    tab1 = Panel(child=p, title="Test Results")
+    tab1 = TabPanel(child=p, title="Test Results")
     p.legend.location = "top_left"
 
     # This graph is for how long the testing part takes uses similar code to the first one but instead of area it has lines connecting points
@@ -247,7 +247,7 @@ def plot_test_data(readfile):
     p1.line('nt','timet',color="blue",source=src)
     taptool = p1.select(type=btools.TapTool)
     taptool.callback = bcall.OpenURL(url=url)
-    tab2 = Panel(child=p1, title="Time Taken")
+    tab2 = TabPanel(child=p1, title="Time Taken")
 
 
     # This graph is for the total number of compilation warnings and it uses the same code as the above plot but with different data
@@ -259,7 +259,7 @@ def plot_test_data(readfile):
     p2.line('nt','cmt',color="blue",source=src)
     taptool = p2.select(type=btools.TapTool)
     taptool.callback = bcall.OpenURL(url=url)
-    tab3 = Panel(child=p2, title="Compile Time Warnings")
+    tab3 = TabPanel(child=p2, title="Compile Time Warnings")
 
     src1=bplt.ColumnDataSource(data=dict(cts=counts,
         wts=warning_types_list))
@@ -271,7 +271,7 @@ def plot_test_data(readfile):
            active_scroll="wheel_zoom", sizing_mode='scale_width')
     p3.vbar(x='wts', top='cts', width=0.9, source=src1,
        line_color='white', fill_color=factor_cmap('wts', palette=viridis(len(counts)), factors=warning_types_list))
-    tab4=Panel(child=p3, title="Compilation Warning Thorns")
+    tab4=TabPanel(child=p3, title="Compilation Warning Thorns")
 
     p.xaxis.major_label_orientation = math.pi/6
     p1.xaxis.major_label_orientation = math.pi/6
