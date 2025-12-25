@@ -24,8 +24,8 @@ TWOPROC_DIR="$(./simfactory/bin/sim --machine="actions-$ACCELERATOR-$REAL_PRECIS
 
 # # Parse results and generate plots
 cd "$PAGESSPACE"
-python3 "scripts/store.py" "$WORKSPACE/Cactus/repos/canudax_lean" "$ONEPROC_DIR" "$TWOPROC_DIR"
-python3 "scripts/logpage.py" "$WORKSPACE/Cactus/repos/canudax_lean"
+python3 "store.py" "$WORKSPACE/Cactus/repos/canudax_lean" "$ONEPROC_DIR" "$TWOPROC_DIR"
+python3 "logpage.py" "$WORKSPACE/Cactus/repos/canudax_lean"
 
 # # Store HTML results
 git add docs
