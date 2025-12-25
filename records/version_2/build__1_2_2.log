@@ -1,0 +1,119 @@
+------------------------------------------------------------------------
+
+  Warnings for configuration sim
+  --------
+
+  Tests missed for lack of thorns:
+
+    teukolsky_lean in CanudaX_NPScalars
+      (CanudaX_Lean/CanudaX_NPScalars/test/teukolsky_lean.par)
+      Missing:  CARPETINTERP AEILOCALINTERP CARTGRID3D COORDBASE SYMBASE BOUNDARY CARPET CARPETLIB CARPETSLAB CARPETREGRID2 CARPETREDUCE INITBASE CARPETIOASCII IOBASIC ADMBASE ADMMACROS GENERICFD TMUNUBASE STATICCONFORMAL COORDGAUGE SPACEMASK IDLINEARWAVES LOOPCONTROL NPSCALARS LEANBSSNMOL NEWRAD GENERICFD MOL REFLECTIONSYMMETRY
+
+------------------------------------------------------------------------
+
+  Testsuite Summary for configuration sim
+  -----------------
+
+  Suitable testsuite parameter files found in:
+
+    CanudaX_BSSNMoL [4]
+    CanudaX_NPScalars [1]
+
+  Details:
+
+    CanudaX_BSSNMoL:
+      gaugewave (4.2 s)
+      minkowski (6.1 s)
+      twopunctures (11.1 s)
+      twopunctures_amr (11.6 s)
+    CanudaX_NPScalars:
+      teukolsky (53.9 s)
+
+  Thorns with no valid testsuite parameter files:
+
+    ADIOS2
+    ADMBaseX
+    AMReX
+    Arith
+    Boost
+    BoxInBox
+    CACTUS
+    CanudaX_ExactID
+    CarpetX
+    CarpetXRegrid
+    CoordinatesX
+    ErrorEstimator
+    FFTW3
+    GSL
+    HDF5
+    IOUtil
+    Loop
+    MPI
+    Multipole
+    NSIMD
+    NewRadX
+    ODESolvers
+    OpenBLAS
+    OpenSSL
+    PETSc
+    PunctureTracker
+    Silo
+    SystemTopology
+    TerminationTrigger
+    TestLoopX
+    TestNewRadX
+    Time
+    TimerReport
+    TmunuBaseX
+    TwoPuncturesX
+    hwloc
+    libjpeg
+    openPMD
+    pthreads
+    ssht
+    yaml_cpp
+    zlib
+
+------------------------------------------------------------------------
+
+  Run details for configuration sim
+
+      CanudaX_BSSNMoL: gaugewave
+         Success: 66 files compared, 8 differ in the last digits
+      CanudaX_BSSNMoL: minkowski
+         Success: 48 files identical
+      CanudaX_BSSNMoL: twopunctures
+         Success: 48 files identical
+      CanudaX_BSSNMoL: twopunctures_amr
+         Success: 60 files identical
+      CanudaX_NPScalars: teukolsky
+         Success: 42 files compared, 17 differ in the last digits
+
+========================================================================
+
+  Summary for configuration sim
+
+    Time                     -> Thu Dec 25 03:22:02 AM UTC 2025
+    Host                     -> 14b116b53300
+    Processes                -> 1
+    User                     -> root
+
+    Total available tests    -> 6
+    Unrunnable tests         -> 1
+    Runnable tests           -> 5
+    Total number of thorns   -> 44
+    Number of tested thorns  -> 2
+    Number of tests passed   -> 5
+    Number passed only to
+               set tolerance -> 2
+    Number failed            -> 0
+
+  Tests passed:
+
+    gaugewave (from CanudaX_BSSNMoL)
+    minkowski (from CanudaX_BSSNMoL)
+    twopunctures (from CanudaX_BSSNMoL)
+    twopunctures_amr (from CanudaX_BSSNMoL)
+    teukolsky (from CanudaX_NPScalars)
+
+========================================================================

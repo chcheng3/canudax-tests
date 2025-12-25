@@ -1,0 +1,66 @@
+   mp_Psi4_l0_m0_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l0_m0_r3.00.tsv
+   mp_Psi4_l1_m-1_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l1_m-1_r3.00.tsv
+   mp_Psi4_l1_m0_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l1_m0_r3.00.tsv
+   mp_Psi4_l1_m1_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l1_m1_r3.00.tsv
+   mp_Psi4_l2_m-1_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l2_m-1_r3.00.tsv
+      maximum absolute difference in column 2 is 1.5361641581184e-17
+      maximum absolute difference in column 3 is 6.18194554328268e-17
+      maximum relative difference in column 2 is 0.191259094339283
+      maximum relative difference in column 3 is 0.328409559176104
+      (insignificant differences on 1 lines)
+   mp_Psi4_l2_m-2_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l2_m-2_r3.00.tsv
+      maximum absolute difference in column 2 is 1.46258873068295e-15
+      maximum absolute difference in column 3 is 3.68635454099317e-17
+      maximum relative difference in column 2 is 1.79890597315983e-12
+      maximum relative difference in column 3 is 1.22479968705705
+      (insignificant differences on 1 lines)
+   mp_Psi4_l2_m0_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l2_m0_r3.00.tsv
+      maximum absolute difference in column 2 is 6.43425612539202e-16
+      maximum absolute difference in column 3 is 1.87656086447614e-22
+      maximum relative difference in column 2 is 5.75841792609909e-08
+      maximum relative difference in column 3 is 0.231136662662319
+      (insignificant differences on 1 lines)
+   mp_Psi4_l2_m1_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l2_m1_r3.00.tsv
+      maximum absolute difference in column 2 is 1.33314081698744e-17
+      maximum absolute difference in column 3 is 1.12988761806479e-16
+      maximum relative difference in column 2 is 0.140647255082025
+      maximum relative difference in column 3 is 0.485930103136135
+      (insignificant differences on 1 lines)
+   mp_Psi4_l2_m2_r3.00.tsv: substantial differences
+      significant differences on 16 (out of 1) lines
+      missing  16 lines in new mp_Psi4_l2_m2_r3.00.tsv
+      maximum absolute difference in column 2 is 1.30472889436906e-15
+      maximum absolute difference in column 3 is 3.68514576158223e-17
+      maximum relative difference in column 2 is 1.60474681104549e-12
+      maximum relative difference in column 3 is 1.22434977469923
+      (insignificant differences on 1 lines)
+
+
+   canudax_npscalars-nppsi4i_group.it000000.x.tsv: not created in test
+   canudax_npscalars-nppsi4i_group.it000000.y.tsv: not created in test
+   canudax_npscalars-nppsi4i_group.it000000.z.tsv: not created in test
+   canudax_npscalars-nppsi4i_group.it000016.x.tsv: not created in test
+   canudax_npscalars-nppsi4i_group.it000016.y.tsv: not created in test
+   canudax_npscalars-nppsi4i_group.it000016.z.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000000.x.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000000.y.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000000.z.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000016.x.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000016.y.tsv: not created in test
+   canudax_npscalars-nppsi4r_group.it000016.z.tsv: not created in test

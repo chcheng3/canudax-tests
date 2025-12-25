@@ -1,0 +1,122 @@
+------------------------------------------------------------------------
+
+  Warnings for configuration sim
+  --------
+
+  Tests missed for lack of thorns:
+
+    teukolsky_lean in CanudaX_NPScalars
+      (CanudaX_Lean/CanudaX_NPScalars/test/teukolsky_lean.par)
+      Missing:  CARPETINTERP AEILOCALINTERP CARTGRID3D COORDBASE SYMBASE BOUNDARY CARPET CARPETLIB CARPETSLAB CARPETREGRID2 CARPETREDUCE INITBASE CARPETIOASCII IOBASIC ADMBASE ADMMACROS GENERICFD TMUNUBASE STATICCONFORMAL COORDGAUGE SPACEMASK IDLINEARWAVES LOOPCONTROL NPSCALARS LEANBSSNMOL NEWRAD GENERICFD MOL REFLECTIONSYMMETRY
+
+------------------------------------------------------------------------
+
+  Testsuite Summary for configuration sim
+  -----------------
+
+  Suitable testsuite parameter files found in:
+
+    CanudaX_BSSNMoL [4]
+    CanudaX_NPScalars [1]
+
+  Details:
+
+    CanudaX_BSSNMoL:
+      gaugewave (2.0 s)
+      minkowski (5.0 s)
+      twopunctures (10.2 s)
+      twopunctures_amr (8.4 s)
+    CanudaX_NPScalars:
+      teukolsky (2.7 s)
+
+  Thorns with no valid testsuite parameter files:
+
+    ADIOS2
+    ADMBaseX
+    AMReX
+    Arith
+    Boost
+    BoxInBox
+    CACTUS
+    CanudaX_ExactID
+    CarpetX
+    CarpetXRegrid
+    CoordinatesX
+    ErrorEstimator
+    FFTW3
+    GSL
+    HDF5
+    IOUtil
+    Loop
+    MPI
+    Multipole
+    NSIMD
+    NewRadX
+    ODESolvers
+    OpenBLAS
+    OpenSSL
+    PETSc
+    PunctureTracker
+    Silo
+    SystemTopology
+    TerminationTrigger
+    TestLoopX
+    TestNewRadX
+    Time
+    TimerReport
+    TmunuBaseX
+    TwoPuncturesX
+    hwloc
+    libjpeg
+    openPMD
+    pthreads
+    ssht
+    yaml_cpp
+    zlib
+
+------------------------------------------------------------------------
+
+  Run details for configuration sim
+
+      CanudaX_BSSNMoL: gaugewave
+         Success: 66 files compared, 8 differ in the last digits
+      CanudaX_BSSNMoL: minkowski
+         Success: 48 files identical
+      CanudaX_BSSNMoL: twopunctures
+         Success: 48 files identical
+      CanudaX_BSSNMoL: twopunctures_amr
+         Success: 60 files identical
+      CanudaX_NPScalars: teukolsky
+         Failure: Cactus exited with error code 134.
+
+========================================================================
+
+  Summary for configuration sim
+
+    Time                     -> Thu Dec 25 03:22:51 AM UTC 2025
+    Host                     -> 14b116b53300
+    Processes                -> 2
+    User                     -> root
+
+    Total available tests    -> 6
+    Unrunnable tests         -> 1
+    Runnable tests           -> 5
+    Total number of thorns   -> 44
+    Number of tested thorns  -> 2
+    Number of tests passed   -> 4
+    Number passed only to
+               set tolerance -> 1
+    Number failed            -> 1
+
+  Tests passed:
+
+    gaugewave (from CanudaX_BSSNMoL)
+    minkowski (from CanudaX_BSSNMoL)
+    twopunctures (from CanudaX_BSSNMoL)
+    twopunctures_amr (from CanudaX_BSSNMoL)
+
+  Tests failed:
+
+    teukolsky (from CanudaX_NPScalars)
+
+========================================================================

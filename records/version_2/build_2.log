@@ -1,0 +1,1482 @@
+Using configuration: sim
+Reconfiguring sim
+Writing configuration to: /__w/canudax-tests/workspace/Cactus/configs/sim/OptionList
+Cactus - version: 4.18.0
+Reconfiguring sim.
+Using configuration options from configure line
+  Setting auth to '3,4 --'
+End of options from configure line
+Adding configuration options from '/__w/canudax-tests/workspace/Cactus/configs/sim/OptionList'...
+  Setting VERSION to 'actions-real-cpu64-2023-02-04'
+  Setting CPP to 'cpp'
+  Setting CC to 'gcc'
+  Setting CXX to 'g++'
+  Setting FPP to 'cpp'
+  Setting FC to 'gfortran'
+  Setting F90 to 'gfortran'
+  Setting CFLAGS to '-D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -ftrivial-auto-var-init=pattern -g -march=x86-64-v3 -pie -pipe -std=gnu11'
+  Setting CXXFLAGS to '-D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe -std=gnu++17'
+  Setting FPPFLAGS to '-traditional'
+  Setting F90FLAGS to '-fPIE -fcf-protection=full -fcray-pointer -ffixed-line-length-none -finit-character=65 -finit-integer=42424242 -finit-real=nan -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe'
+  Setting LDFLAGS to '-L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/local/lib -Wl,-z,relro,-z,now'
+  Setting C_LINE_DIRECTIVES to 'yes'
+  Setting F_LINE_DIRECTIVES to 'yes'
+  Setting INTEGER_PRECISION to '4'
+  Setting REAL_PRECISION to '8'
+  Setting DEBUG to 'no'
+  Setting CPP_DEBUG_FLAGS to '-DCARPET_DEBUG'
+  Setting C_DEBUG_FLAGS to '-fbounds-check -fsanitize=undefined -fstack-protector-all -ftrapv'
+  Setting CXX_DEBUG_FLAGS to '-fbounds-check -fsanitize=undefined -fstack-protector-all -ftrapv'
+  Setting FPP_DEBUG_FLAGS to '-DCARPET_DEBUG'
+  Setting F90_DEBUG_FLAGS to '-fcheck=bounds,do,mem,pointer,recursion -fsanitize=undefined -fstack-protector-all -ftrapv'
+  Setting OPTIMISE to 'yes'
+  Setting C_OPTIMISE_FLAGS to '-O3 -fcx-limited-range -fexcess-precision=fast -ffp-contract=fast -fno-math-errno -fno-rounding-math -fno-signaling-nans'
+  Setting CXX_OPTIMISE_FLAGS to '-O3 -fcx-limited-range -fexcess-precision=fast -ffp-contract=fast -fno-math-errno -fno-rounding-math -fno-signaling-nans'
+  Setting F90_OPTIMISE_FLAGS to '-O3 -fcx-limited-range -fexcess-precision=fast -ffp-contract=fast -fno-math-errno -fno-rounding-math -fno-signaling-nans'
+  Setting OPENMP to 'yes'
+  Setting CPP_OPENMP_FLAGS to '-fopenmp'
+  Setting FPP_OPENMP_FLAGS to '-D_OPENMP'
+  Setting C_OPENMP_FLAGS to '-fopenmp'
+  Setting CXX_OPENMP_FLAGS to '-fopenmp'
+  Setting F90_OPENMP_FLAGS to '-fopenmp'
+  Setting LD_OPENMP_FLAGS to '-fopenmp'
+  Setting WARN to 'yes'
+  Setting CPP_WARN_FLAGS to '-Wall'
+  Setting C_WARN_FLAGS to ''
+  Setting CXX_WARN_FLAGS to ''
+  Setting FPP_WARN_FLAGS to '-Wall'
+  Setting F90_WARN_FLAGS to '-Wall -Wshadow -Wsurprising'
+  Setting ADIOS2_DIR to '/usr/local'
+  Setting ADIOS2_LIBS to 'adios2_cxx11_mpi adios2_cxx11 mgard protobuf'
+  Setting AMREX_DIR to '/usr/local'
+  Setting BLAS_DIR to '/usr'
+  Setting BOOST_DIR to '/usr'
+  Setting CONDUIT_DIR to '/usr/local'
+  Setting FFTW3_DIR to '/usr'
+  Setting GSL_DIR to '/usr'
+  Setting HDF5_DIR to '/usr/lib/x86_64-linux-gnu/hdf5/serial'
+  Setting HDF5_ENABLE_CXX to 'yes'
+  Setting HDF5_ENABLE_FORTRAN to 'yes'
+  Setting HDF5_INC_DIRS to '/usr/lib/x86_64-linux-gnu/hdf5/serial/include'
+  Setting HDF5_LIB_DIRS to '/usr/lib/x86_64-linux-gnu/hdf5/serial/lib'
+  Setting HDF5_LIBS to 'hdf5_hl_cpp hdf5_cpp hdf5hl_fortran hdf5_fortran hdf5_hl hdf5'
+  Setting HWLOC_DIR to '/usr'
+  Setting LAPACK_DIR to '/usr'
+  Setting MPI_DIR to '/usr'
+  Setting NSIMD_DIR to '/usr/local'
+  Setting NSIMD_SIMD to 'AVX2'
+  Setting OPENBLAS_DIR to '/usr'
+  Setting OPENPMD_API_DIR to '/usr/local'
+  Setting PETSC_DIR to '/usr/lib/petsc'
+  Setting PETSC_LIBS to 'petsc_real'
+  Setting PETSC_ARCH_LIBS to 'm'
+  Setting PTHREADS_DIR to 'NO_BUILD'
+  Setting SILO_DIR to '/usr/local'
+  Setting SIMULATIONIO_DIR to '/usr/local'
+  Setting SSHT_DIR to '/usr/local'
+  Setting YAML_CPP_DIR to '/usr/local'
+  Setting ZLIB_DIR to '/usr'
+End of options from '/__w/canudax-tests/workspace/Cactus/configs/sim/OptionList'.
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether the C compiler (gcc -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -ftrivial-auto-var-init=pattern -g -march=x86-64-v3 -pie -pipe -std=gnu11 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/local/lib -Wl,-z,relro,-z,now) works... yes
+checking whether the C compiler (gcc -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -ftrivial-auto-var-init=pattern -g -march=x86-64-v3 -pie -pipe -std=gnu11 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/local/lib -Wl,-z,relro,-z,now) is a cross-compiler... no
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether the C++ compiler (g++ -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe -std=gnu++17 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/local/lib -Wl,-z,relro,-z,now) works... yes
+checking whether the C++ compiler (g++ -D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS -fPIE -fcf-protection=full -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe -std=gnu++17 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/local/lib -Wl,-z,relro,-z,now) is a cross-compiler... no
+checking whether the compiler supports GNU C++... yes
+checking whether g++ accepts -g... yes
+checking for g++ option to enable C++11 features... none needed
+checking for nvcc... no
+checking for ranlib... ranlib
+checking for perl... perl
+checking for gtar... no
+checking for tar... tar
+checking for xargs... xargs
+checking for gzip... gzip
+checking for gpatch... no
+checking for patch... patch
+checking for git... git
+checking for ar... ar
+checking for mkdir... mkdir
+checking whether the Fortran compiler (gfortran  ) works... yes
+checking whether the Fortran compiler (gfortran  ) is a cross-compiler... no
+checking whether the Fortran compiler (gfortran  ) supports TYPE(*) for CCTK_PointerTo... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for C99 features... yes
+checking for M_PI... yes
+checking for C strdup... yes
+checking for C++ strdup... yes
+checking whether byte ordering is bigendian... no
+checking size of long long... 8
+checking size of long int... 8
+checking size of int... 4
+checking size of short int... 2
+checking size of long double... 16
+checking size of double... 8
+checking size of float... 4
+checking size of char *... 8
+checking for the null device... /dev/null
+checking for gethostbyname... yes
+checking whether mode_t is defined... yes
+checking for availability of gettimeofday timing... yes
+checking if gettimeofday needs timezone... yes
+checking for availability of getrusage timing... yes
+checking for availability of _ftime timing... no
+checking for time.h... yes
+checking for sys/time.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for string.h... yes
+checking for assert.h... yes
+checking for tgmath.h... yes
+checking for sys/stat.h... yes
+checking for getopt.h... yes
+checking for dirent.h... yes
+checking for c_asm.h... no
+checking for intrinsics.h... no
+checking for mach/mach_time.h... no
+checking for regex.h... yes
+checking for sys/filio.h... no
+checking for sys/ioctl.h... yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for netdb.h... yes
+checking for arpa/inet.h... yes
+checking for winsock2.h... no
+checking for crypt.h... yes
+checking for signal.h... yes
+checking for malloc.h... yes
+checking for sched.h... yes
+checking for execinfo.h... yes
+checking whether socklen_t is defined... yes
+checking whether SOCKET is defined... no
+checking for hrtime_t... no
+checking for gethrtime... no
+checking for read_real_time... no
+checking for time_base_to_time... no
+checking for clock_gettime... yes
+checking for mach_absolute_time... no
+checking for _rtc intrinsic... no
+checking for mallinfo... yes
+checking for mallopt... yes
+checking for malloc_info... yes
+checking whether M_MMAP_THRESHOLD is defined... yes
+checking for sched_getaffinity... yes
+checking for getpid... yes
+checking if __int64 is defined... no
+checking if __int128 is defined... yes
+checking for vector... yes
+checking for vector.h... no
+checking if Intel compiler has broken restrict... no
+checking if compiler has broken omp collapse... no
+checking for getopt_long_only... yes
+checking for an ANSI C-conforming const... yes
+checking for C inline... inline
+checking for C static inline... static inline
+checking for C restrict... restrict
+checking for C++ restrict... __restrict__
+checking for C++ copysign... std::copysign
+checking for C++ fpclassify... std::fpclassify
+checking for C++ isfinite... std::isfinite
+checking for C++ isinf... std::isinf
+checking for C++ isnan... std::isnan
+checking for C++ isnormal... std::isnormal
+checking for C++ signbit... std::signbit
+checking for C _Pragma... yes
+checking for C function __attribute__((__const__))... yes
+checking for C++ function __attribute__((__const__))... yes
+checking for C++ member function __attribute__((__const__))... yes
+checking for C function __attribute__((__pure__))... yes
+checking for C++ function __attribute__((__pure__))... yes
+checking for C++ member function __attribute__((__pure__))... yes
+checking for C data __attribute__((__common__))... yes
+checking for C+ data __attribute__((__common__))... yes
+checking for C function __attribute__((__noinline__))... yes
+checking for C++ function __attribute__((__noinline__))... yes
+checking for C++ member function __attribute__((__noinline__))... yes
+checking for C function __attribute__((__always_inline__))... yes
+checking for C++ function __attribute__((__always_inline__))... yes
+checking for C++ member function __attribute__((__always_inline__))... yes
+checking for C __attribute__((__unused__))... yes
+checking for C++ __attribute__((__unused__))... yes
+checking for C __attribute__((__aligned__(...)))... yes
+checking for C++ __attribute__((__aligned__(...)))... yes
+checking for C __attribute__((__cold__))... yes
+checking for C++ __attribute__((__cold__))... yes
+checking for C __attribute__((__hot__))... yes
+checking for C++ __attribute__((__hot__))... yes
+checking for C __attribute__((__format__(printf, 1, 2)))... yes
+checking for C++ __attribute__((__format__(printf, 1, 2)))... yes
+checking for C __attribute__((__noreturn__))... yes
+checking for C++ __attribute__((__noreturn__))... yes
+checking for C __attribute__((__nonnull__))... yes
+checking for C++ __attribute__((__nonnull__))... yes
+checking for C __attribute__((__returns_nonnull__))... yes
+checking for C++ __attribute__((__returns_nonnull__))... yes
+checking for C __builtin_expect... yes
+checking for C++ __builtin_expect... yes
+checking for C __builtin_trap... yes
+checking for C++ __builtin_trap... yes
+checking for C __builtin_unreachable... yes
+checking for C++ __builtin_unreachable... yes
+checking for C __builtin_assume_aligned... yes
+checking for C++ __builtin_assume_aligned... yes
+checking for C++ static_assert... yes
+checking for C++ auto specifier... yes
+checking for C++ lambda expressions... yes
+checking for C++ range-based for statements... yes
+checking for C++11 math support... yes
+checking for Fortran REAL*4... yes
+checking for Fortran REAL*8... yes
+checking for Fortran REAL*16... yes
+checking for Fortran COMPLEX*8... yes
+checking for Fortran COMPLEX*16... yes
+checking for Fortran COMPLEX*32... yes
+checking for cxxabi.h... yes
+checking for __cxa_demangle... yes
+checking for Dl_info.dli_sname... yes
+checking for dladdr... yes
+checking for backtrace... yes
+checking for backtrace_symbols... yes
+checking for crypt... no
+checking for crypt in library crypt... yes
+checking for finite in header math.h and library m... yes
+checking for copysign in header math.h and library m... yes
+checking for fpclassify in header math.h and library m... yes
+checking for isfinite in header math.h and library m... yes
+checking for isinf in header math.h and library m... yes
+checking for isnan in header math.h and library m... yes
+checking for isnormal in header math.h and library m... yes
+checking for signbit in header math.h and library m... yes
+checking for mkstemp... yes
+checking for va_copy... yes
+checking whether linker supports --whole-archive... yes
+checking whether linker supports -filelist... no
+creating cctk_Archdefs.h
+creating make.arch.defn
+creating cctk_Extradefs.h
+creating make.extra.defn
+configure: creating ./config.status
+Determining number of fortran underscores...
+Compiling test file with gfortran -fPIE -fcf-protection=full -fcray-pointer -ffixed-line-length-none -finit-character=65 -finit-integer=42424242 -finit-real=nan -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe ...
+Lowercase - One trailing underscore
+Compiling test file with gfortran -fPIE -fcf-protection=full -fcray-pointer -ffixed-line-length-none -finit-character=65 -finit-integer=42424242 -finit-real=nan -fstack-clash-protection -fstack-protector-strong -g -march=x86-64-v3 -pie -pipe ...
+Lowercase - One trailing underscore
+config.status: creating make.config.defn
+config.status: creating make.config.deps
+config.status: creating make.config.rules
+config.status: creating cctk_Config.h
+config.status: executing default-1 commands
+Use make sim to build the configuration.
+Complete rebuild required
+Cleaning sim
+Cleaning configuration sim
+Deleting all built files in /__w/canudax-tests/workspace/Cactus/configs/sim
+Warning: default submit script contents have changed
+Updated script file for configuration sim
+Warning: default run script contents have changed
+Updated runscript file for configuration sim
+Warning: default thorn list contents have changed
+Updated thorn list for configuration sim
+Building sim
+Cactus - version: 4.18.0
+Building configuration sim
+Processing CCL files
+Reading ThornList...
+Parsing configuration files...
+   ADIOS2
+           Provides:          ADIOS2 
+           Requires:          ADIOS2 
+           Optional:          MPI CUDA CMake 
+   ADMBaseX
+           Requires:          Loop 
+   AMReX
+           Provides:          AMReX 
+           Requires:          AMReX MPI 
+           Optional:          CMake 
+   Arith
+           Provides:          Arith 
+           Optional:          NSIMD yaml_cpp 
+   Boost
+           Provides:          Boost 
+           Requires:          MPI 
+   BoxInBox
+           Requires:          Loop 
+   Cactus
+           Optional:          MPI 
+   CanudaX_BSSNMoL
+           Requires:          Loop 
+   CanudaX_ExactID
+           Requires:          GSL Loop 
+   CanudaX_NPScalars
+           Requires:          Loop 
+   CarpetX
+           Provides:          CarpetX 
+           Requires:          AMReX IOUtil MPI yaml_cpp zlib Arith CarpetXRegrid Loop 
+           Optional:          ADIOS2 CUDA openPMD_api Silo 
+   CarpetXRegrid
+           Provides:          CarpetXRegrid 
+           Requires:          AMReX Arith Loop 
+   CoordinatesX
+           Requires:          Loop 
+   ErrorEstimator
+           Requires:          Loop 
+   FFTW3
+           Provides:          FFTW3 
+           Requires:          FFTW3 
+   GSL
+           Provides:          GSL 
+           Requires:          GSL 
+   HDF5
+           Provides:          HDF5 
+           Requires:          HDF5 zlib 
+           Optional:          MPI 
+   IOUtil
+           Provides:          IOUTIL 
+   Loop
+           Provides:          Loop 
+           Requires:          AMReX Arith Loop 
+   MPI
+           Provides:          MPI 
+           Requires:          MPI 
+           Optional:          hwloc 
+   Multipole
+           Requires:          Loop 
+           Optional:          HDF5 
+   NSIMD
+           Provides:          NSIMD 
+           Requires:          NSIMD 
+           Optional:          CMake 
+   NewRadX
+           Provides:          NewRadX 
+           Requires:          CarpetX Loop 
+   ODESolvers
+           Requires:          AMReX CarpetX 
+   OpenBLAS
+           Provides:          OpenBLAS BLAS LAPACK 
+           Requires:          OpenBLAS 
+   OpenSSL
+           Provides:          OpenSSL 
+   PETSc
+           Provides:          PETSc 
+           Requires:          BLAS LAPACK MPI PETSc 
+   PunctureTracker
+           Requires:          MPI Loop 
+   Silo
+           Provides:          Silo 
+           Requires:          Silo HDF5 
+           Optional:          MPI 
+   SystemTopology
+           Requires:          hwloc MPI 
+   TerminationTrigger
+   TestLoopX
+           Requires:          CarpetX Loop 
+   TestNewRadX
+           Requires:          Loop NewRadX 
+   Time
+   TimerReport
+           Optional:          MPI 
+   TmunuBaseX
+           Requires:          Loop 
+   TwoPuncturesX
+           Requires:          GSL 
+   hwloc
+           Provides:          hwloc 
+           Requires:          zlib hwloc 
+           Optional:          pciutils 
+   libjpeg
+           Provides:          libjpeg 
+   openPMD
+           Provides:          openPMD_api 
+           Requires:          openPMD_api 
+           Optional:          CMake HDF5 ADIOS2 MPI 
+   pthreads
+           Provides:          PTHREADS 
+           Requires:          PTHREADS 
+   ssht
+           Provides:          ssht 
+           Requires:          ssht FFTW3 
+           Optional:          CMake 
+   yaml_cpp
+           Provides:          yaml_cpp 
+           Requires:          yaml_cpp 
+           Optional:          CMake 
+   zlib
+           Provides:          zlib 
+           Requires:          zlib 
+Parsing interface files...
+   ADIOS2
+           Implements: ADIOS2
+           0 Public, 0 Protected, 0 Private variable groups
+   ADMBaseX
+           Implements: ADMBaseX
+           10 Public, 0 Protected, 0 Private variable groups
+   AMReX
+           Implements: AMReX
+           0 Public, 0 Protected, 0 Private variable groups
+   Arith
+           Implements: Arith
+           0 Public, 0 Protected, 0 Private variable groups
+   Boost
+           Implements: Boost
+           0 Public, 0 Protected, 0 Private variable groups
+   BoxInBox
+           Implements: BoxInBox
+           Inherits:  CarpetXRegrid 
+           6 Public, 0 Protected, 0 Private variable groups
+   Cactus
+           Implements: Cactus
+           0 Public, 0 Protected, 0 Private variable groups
+   CanudaX_BSSNMoL
+           Implements: CanudaX_BSSNMoL
+           Inherits:  ADMBaseX CarpetXRegrid TmunuBaseX 
+           17 Public, 0 Protected, 0 Private variable groups
+   CanudaX_ExactID
+           Implements: CanudaX_ExactID
+           Inherits:  ADMBaseX 
+           0 Public, 0 Protected, 0 Private variable groups
+   CanudaX_NPScalars
+           Implements: CanudaX_NPScalars
+           Inherits:  ADMBaseX TmunuBaseX 
+           0 Public, 0 Protected, 3 Private variable groups
+   CarpetX
+           Implements: Driver
+           0 Public, 0 Protected, 0 Private variable groups
+   CarpetXRegrid
+           Implements: CarpetXRegrid
+           2 Public, 0 Protected, 0 Private variable groups
+   CoordinatesX
+           Implements: CoordinatesX
+           4 Public, 0 Protected, 0 Private variable groups
+   ErrorEstimator
+           Implements: ErrorEstimator
+           Inherits:  CarpetXRegrid 
+           0 Public, 0 Protected, 0 Private variable groups
+   FFTW3
+           Implements: FFTW3
+           0 Public, 0 Protected, 0 Private variable groups
+   GSL
+           Implements: GSL
+           0 Public, 0 Protected, 0 Private variable groups
+   HDF5
+           Implements: HDF5
+           0 Public, 0 Protected, 0 Private variable groups
+   IOUtil
+           Implements: IO
+           0 Public, 0 Protected, 0 Private variable groups
+   Loop
+           Implements: Loop
+           0 Public, 0 Protected, 0 Private variable groups
+   MPI
+           Implements: MPI
+           0 Public, 0 Protected, 0 Private variable groups
+   Multipole
+           Implements: Multipole
+           0 Public, 0 Protected, 0 Private variable groups
+   NSIMD
+           Implements: NSIMD
+           0 Public, 0 Protected, 0 Private variable groups
+   NewRadX
+           Implements: NewRadX
+           0 Public, 0 Protected, 0 Private variable groups
+   ODESolvers
+           Implements: ODESolvers
+           0 Public, 0 Protected, 2 Private variable groups
+   OpenBLAS
+           Implements: OpenBLAS
+           0 Public, 0 Protected, 0 Private variable groups
+   OpenSSL
+           Implements: OpenSSL
+           0 Public, 0 Protected, 0 Private variable groups
+   PETSc
+           Implements: PETSc
+           0 Public, 0 Protected, 0 Private variable groups
+   PunctureTracker
+           Implements: PunctureTracker
+           Inherits:  ADMBaseX CoordinatesX BoxInBox 
+           3 Public, 0 Protected, 0 Private variable groups
+   Silo
+           Implements: Silo
+           0 Public, 0 Protected, 0 Private variable groups
+   SystemTopology
+           Implements: SystemTopology
+           0 Public, 0 Protected, 0 Private variable groups
+   TerminationTrigger
+           Implements: TerminationTrigger
+           0 Public, 0 Protected, 3 Private variable groups
+   TestLoopX
+           Implements: TestLoopX
+           0 Public, 0 Protected, 2 Private variable groups
+   TestNewRadX
+           Implements: TestNewRadX
+           Inherits:  CarpetXRegrid 
+           0 Public, 0 Protected, 4 Private variable groups
+   Time
+           Implements: time
+           2 Public, 0 Protected, 2 Private variable groups
+   TimerReport
+           Implements: timerreport
+           0 Public, 0 Protected, 0 Private variable groups
+   TmunuBaseX
+           Implements: TmunuBaseX
+           4 Public, 0 Protected, 0 Private variable groups
+   TwoPuncturesX
+           Implements: TwoPuncturesX
+           Inherits:  ADMBaseX CoordinatesX 
+           0 Public, 0 Protected, 6 Private variable groups
+   hwloc
+           Implements: hwloc
+           0 Public, 0 Protected, 0 Private variable groups
+   libjpeg
+           Implements: libjpeg
+           0 Public, 0 Protected, 0 Private variable groups
+   openPMD
+           Implements: openPMD
+           0 Public, 0 Protected, 0 Private variable groups
+   pthreads
+           Implements: PTHREADS
+           0 Public, 0 Protected, 0 Private variable groups
+   ssht
+           Implements: ssht
+           0 Public, 0 Protected, 0 Private variable groups
+   yaml_cpp
+           Implements: yaml_cpp
+           0 Public, 0 Protected, 0 Private variable groups
+   zlib
+           Implements: zlib
+           0 Public, 0 Protected, 0 Private variable groups
+Parsing parameter files...
+   ADIOS2
+          0 Global, 0 Restricted, 0 Private parameters
+   ADMBaseX
+          0 Global, 5 Restricted, 3 Private parameters
+   AMReX
+          0 Global, 0 Restricted, 0 Private parameters
+   Arith
+          0 Global, 0 Restricted, 0 Private parameters
+   Boost
+          0 Global, 0 Restricted, 0 Private parameters
+   BoxInBox
+          0 Global, 0 Restricted, 31 Private parameters
+   Cactus
+          0 Global, 7 Restricted, 13 Private parameters
+   CanudaX_BSSNMoL
+           Shares: ADMBASEX
+          0 Global, 2 Restricted, 38 Private parameters
+   CanudaX_ExactID
+           Shares: ADMBASEX
+          0 Global, 0 Restricted, 14 Private parameters
+   CanudaX_NPScalars
+           Shares: CANUDAX_BSSNMOL
+          0 Global, 0 Restricted, 2 Private parameters
+   CarpetX
+           Shares: CACTUS IO
+          0 Global, 4 Restricted, 106 Private parameters
+   CarpetXRegrid
+          0 Global, 0 Restricted, 0 Private parameters
+   CoordinatesX
+          0 Global, 0 Restricted, 0 Private parameters
+   ErrorEstimator
+          0 Global, 0 Restricted, 3 Private parameters
+   FFTW3
+          0 Global, 0 Restricted, 0 Private parameters
+   GSL
+          0 Global, 0 Restricted, 0 Private parameters
+   HDF5
+          0 Global, 0 Restricted, 0 Private parameters
+   IOUtil
+          0 Global, 59 Restricted, 2 Private parameters
+   Loop
+          0 Global, 0 Restricted, 0 Private parameters
+   MPI
+          0 Global, 0 Restricted, 0 Private parameters
+   Multipole
+           Shares: IO
+          0 Global, 17 Restricted, 0 Private parameters
+   NSIMD
+          0 Global, 0 Restricted, 0 Private parameters
+   NewRadX
+          0 Global, 0 Restricted, 0 Private parameters
+   ODESolvers
+          0 Global, 0 Restricted, 2 Private parameters
+   OpenBLAS
+          0 Global, 0 Restricted, 0 Private parameters
+   OpenSSL
+          0 Global, 0 Restricted, 0 Private parameters
+   PETSc
+          0 Global, 0 Restricted, 0 Private parameters
+   PunctureTracker
+          0 Global, 0 Restricted, 8 Private parameters
+   Silo
+          0 Global, 0 Restricted, 0 Private parameters
+   SystemTopology
+          0 Global, 0 Restricted, 2 Private parameters
+   TerminationTrigger
+           Shares: IO
+          0 Global, 0 Restricted, 10 Private parameters
+   TestLoopX
+          0 Global, 0 Restricted, 0 Private parameters
+   TestNewRadX
+          0 Global, 0 Restricted, 9 Private parameters
+   Time
+           Shares: CACTUS
+          0 Global, 2 Restricted, 5 Private parameters
+   TimerReport
+           Shares: IO
+          0 Global, 0 Restricted, 11 Private parameters
+   TmunuBaseX
+          0 Global, 0 Restricted, 0 Private parameters
+   TwoPuncturesX
+           Shares: ADMBASEX IO
+          0 Global, 32 Restricted, 0 Private parameters
+   hwloc
+          0 Global, 0 Restricted, 0 Private parameters
+   libjpeg
+          0 Global, 0 Restricted, 0 Private parameters
+   openPMD
+          0 Global, 0 Restricted, 0 Private parameters
+   pthreads
+          0 Global, 0 Restricted, 0 Private parameters
+   ssht
+          0 Global, 0 Restricted, 0 Private parameters
+   yaml_cpp
+          0 Global, 0 Restricted, 0 Private parameters
+   zlib
+          0 Global, 0 Restricted, 0 Private parameters
+Parsing schedule files...
+   ADIOS2
+          0 schedule blocks.
+   ADMBaseX
+          20 schedule blocks.
+   AMReX
+          0 schedule blocks.
+   Arith
+          2 schedule blocks.
+   Boost
+          0 schedule blocks.
+   BoxInBox
+          3 schedule blocks.
+   Cactus
+          24 schedule blocks.
+   CanudaX_BSSNMoL
+          17 schedule blocks.
+   CanudaX_ExactID
+          7 schedule blocks.
+   CanudaX_NPScalars
+          4 schedule blocks.
+   CarpetX
+          6 schedule blocks.
+   CarpetXRegrid
+          1 schedule blocks.
+   CoordinatesX
+          1 schedule blocks.
+   ErrorEstimator
+          2 schedule blocks.
+   FFTW3
+          0 schedule blocks.
+   GSL
+          0 schedule blocks.
+   HDF5
+          0 schedule blocks.
+   IOUtil
+          4 schedule blocks.
+   Loop
+          0 schedule blocks.
+   MPI
+          0 schedule blocks.
+   Multipole
+          3 schedule blocks.
+   NSIMD
+          0 schedule blocks.
+   NewRadX
+          0 schedule blocks.
+   ODESolvers
+          21 schedule blocks.
+   OpenBLAS
+          0 schedule blocks.
+   OpenSSL
+          0 schedule blocks.
+   PETSc
+          0 schedule blocks.
+   PunctureTracker
+          6 schedule blocks.
+   Silo
+          0 schedule blocks.
+   SystemTopology
+          1 schedule blocks.
+   TerminationTrigger
+          9 schedule blocks.
+   TestLoopX
+          3 schedule blocks.
+   TestNewRadX
+          6 schedule blocks.
+   Time
+          7 schedule blocks.
+   TimerReport
+          3 schedule blocks.
+   TmunuBaseX
+          6 schedule blocks.
+   TwoPuncturesX
+          4 schedule blocks.
+   hwloc
+          2 schedule blocks.
+   libjpeg
+          0 schedule blocks.
+   openPMD
+          0 schedule blocks.
+   pthreads
+          0 schedule blocks.
+   ssht
+          0 schedule blocks.
+   yaml_cpp
+          0 schedule blocks.
+   zlib
+          0 schedule blocks.
+Running any thorn-provided configuration scripts...
+
+********************************************************************************
+Running configuration script for thorn FFTW3:
+Finished running configuration script for thorn FFTW3.
+
+********************************************************************************
+Running configuration script for thorn GSL:
+GSL selected, and /usr selected.
+GSL found.
+Finished running configuration script for thorn GSL.
+
+********************************************************************************
+Running configuration script for thorn LIBJPEG:
+LIBJPEG selected, but LIBJPEG_DIR not set. Checking pkg-config ...
+LIBJPEG not found. Checking standard paths ...
+LIBJPEG found.
+Finished running configuration script for thorn LIBJPEG.
+
+********************************************************************************
+Running configuration script for thorn NSIMD:
+NSIMD selected, and /usr/local selected.
+NSIMD found.
+Finished running configuration script for thorn NSIMD.
+
+********************************************************************************
+Running configuration script for thorn OPENBLAS:
+Finished running configuration script for thorn OPENBLAS.
+
+********************************************************************************
+Running configuration script for thorn OPENSSL:
+OpenSSL selected, but OPENSSL_DIR not set. Checking some places...
+Found OpenSSL in /usr
+Finished running configuration script for thorn OPENSSL.
+
+********************************************************************************
+Running configuration script for thorn PTHREADS:
+Finished running configuration script for thorn PTHREADS.
+
+********************************************************************************
+Running configuration script for thorn SSHT:
+SSHT selected, and /usr/local selected.
+SSHT found.
+Finished running configuration script for thorn SSHT.
+
+********************************************************************************
+Running configuration script for thorn YAML_CPP:
+YAML_CPP selected, and /usr/local selected.
+YAML_CPP found.
+Finished running configuration script for thorn YAML_CPP.
+
+********************************************************************************
+Running configuration script for thorn ZLIB:
+ZLIB selected, and /usr selected.
+ZLIB found.
+Finished running configuration script for thorn ZLIB.
+
+********************************************************************************
+Running configuration script for thorn HWLOC:
+Finished running configuration script for thorn HWLOC.
+
+********************************************************************************
+Running configuration script for thorn MPI:
+Found MPI compiler wrapper at /usr/bin/mpic++!
+Successfully configured MPI.
+Finished running configuration script for thorn MPI.
+
+********************************************************************************
+Running configuration script for thorn PETSC:
+Finished running configuration script for thorn PETSC.
+
+********************************************************************************
+Running configuration script for thorn ADIOS2:
+Finished running configuration script for thorn ADIOS2.
+
+********************************************************************************
+Running configuration script for thorn AMREX:
+AMREX selected, and /usr/local selected.
+AMREX found.
+Finished running configuration script for thorn AMREX.
+
+********************************************************************************
+Running configuration script for thorn BOOST:
+Finished running configuration script for thorn BOOST.
+
+********************************************************************************
+Running configuration script for thorn HDF5:
+Additional requested language support: C++ Fortran
+Finished running configuration script for thorn HDF5.
+
+********************************************************************************
+Running configuration script for thorn OPENPMD:
+OPENPMD selected, but OPENPMD_DIR not set. Checking pkg-config ...
+OPENPMD not found. Checking standard paths ...
+OPENPMD found.
+Finished running configuration script for thorn OPENPMD.
+
+********************************************************************************
+Running configuration script for thorn SILO:
+SILO selected, and /usr/local selected.
+SILO found.
+Finished running configuration script for thorn SILO.
+Checking consistency...
+Creating Thorn-Flesh bindings...
+   Creating implementation bindings...
+   Creating parameter bindings...
+   Creating variable bindings...
+   Creating schedule bindings...
+   Creating function bindings...
+   Generating arguments...
+CST finished.
+Checking status of thorn zlib
+Checking status of thorn NSIMD
+Checking status of thorn yaml_cpp
+Checking status of thorn GSL
+COMPILING configs/sim/bindings/build/yaml_cpp/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/zlib/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/NSIMD/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/GSL/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_yaml_cpp.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_NSIMD.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_zlib.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_GSL.a
+Checking status of thorn IOUtil
+Checking status of thorn FFTW3
+Checking status of thorn OpenBLAS
+Checking status of thorn OpenSSL
+COMPILING configs/sim/bindings/build/FFTW3/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/OpenSSL/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_FFTW3.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_OpenSSL.a
+COMPILING ExternalLibraries/OpenBLAS/src/blas.F90
+COMPILING ExternalLibraries/OpenBLAS/src/lapack.F90
+COMPILING configs/sim/bindings/build/IOUtil/cctk_ThornBindings.c
+Checking status of thorn TerminationTrigger
+COMPILING configs/sim/bindings/build/OpenBLAS/cctk_ThornBindings.c
+Checking status of thorn Time
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_OpenBLAS.a
+COMPILING CactusBase/IOUtil/src/Startup.c
+COMPILING CactusBase/IOUtil/src/CheckpointRecovery.cc
+COMPILING CactusBase/Time/src/Courant.c
+COMPILING CactusUtils/TerminationTrigger/src/file.c
+COMPILING CactusUtils/TerminationTrigger/src/paramcheck.c
+COMPILING CactusBase/Time/src/Given.c
+COMPILING configs/sim/bindings/build/TerminationTrigger/cctk_ThornBindings.c
+COMPILING CactusBase/Time/src/Initialise.c
+COMPILING CactusUtils/TerminationTrigger/src/signal.c
+COMPILING CactusBase/Time/src/Simple.c
+COMPILING configs/sim/bindings/build/Time/cctk_ThornBindings.c
+Checking status of thorn TwoPuncturesX
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Time.a
+COMPILING CactusUtils/TerminationTrigger/src/trigger.c
+COMPILING configs/sim/bindings/build/TwoPuncturesX/cctk_ThornBindings.c
+COMPILING CactusUtils/TerminationTrigger/src/walltime.c
+COMPILING CactusBase/IOUtil/src/AdvertisedFiles.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TerminationTrigger.a
+Checking status of thorn libjpeg
+COMPILING CactusBase/IOUtil/src/Utils.c
+COMPILING configs/sim/bindings/build/libjpeg/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_libjpeg.a
+Checking status of thorn pthreads
+Checking status of thorn ssht
+COMPILING configs/sim/bindings/build/pthreads/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_pthreads.a
+Checking status of thorn CactusBindings
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_IOUtil.a
+COMPILING configs/sim/bindings/build/ssht/cctk_ThornBindings.c
+Checking status of thorn hwloc
+COMPILING SpacetimeX/TwoPuncturesX/src/CoordTransf.cc
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_ssht.a
+COMPILING configs/sim/bindings/build/hwloc/cctk_ThornBindings.c
+COMPILING ExternalLibraries/hwloc/src/version.c
+COMPILING configs/sim/bindings/Implementations/ImplementationBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_hwloc.a
+COMPILING SpacetimeX/TwoPuncturesX/src/Equations.cc
+COMPILING SpacetimeX/TwoPuncturesX/src/FuncAndJacobian.cc
+COMPILING configs/sim/bindings/Functions/AliasedFunctions.c
+COMPILING configs/sim/bindings/Functions/IsFunctionAliased.c
+COMPILING configs/sim/bindings/Functions/RegisterThornFunctions.c
+COMPILING configs/sim/bindings/Functions/CarpetX_Functions.c
+COMPILING configs/sim/bindings/Functions/IOUtil_Functions.c
+COMPILING configs/sim/bindings/Functions/Multipole_Functions.c
+COMPILING configs/sim/bindings/Functions/ODESolvers_Functions.c
+COMPILING configs/sim/bindings/Functions/PunctureTracker_Functions.c
+COMPILING configs/sim/bindings/Functions/SystemTopology_Functions.c
+COMPILING configs/sim/bindings/Functions/TimerReport_Functions.c
+COMPILING configs/sim/bindings/Functions/TwoPuncturesX_Functions.c
+Checking status of thorn Arith
+COMPILING configs/sim/bindings/Parameters/BindingsParameters.c
+COMPILING configs/sim/bindings/Parameters/Global.c
+COMPILING configs/sim/bindings/Parameters/ADIOS2_Parameters.c
+COMPILING configs/sim/bindings/Parameters/ADMBaseX_Parameters.c
+COMPILING SpacetimeX/TwoPuncturesX/src/Newton.cc
+COMPILING configs/sim/bindings/Parameters/AMReX_Parameters.c
+COMPILING configs/sim/bindings/Parameters/Arith_Parameters.c
+COMPILING configs/sim/bindings/Parameters/Boost_Parameters.c
+COMPILING configs/sim/bindings/Parameters/BoxInBox_Parameters.c
+COMPILING configs/sim/bindings/Parameters/Cactus_Parameters.c
+COMPILING configs/sim/bindings/Parameters/CanudaX_BSSNMoL_Parameters.c
+COMPILING configs/sim/bindings/Variables/BindingsVariables.c
+COMPILING configs/sim/bindings/Parameters/CanudaX_ExactID_Parameters.c
+COMPILING configs/sim/bindings/Variables/ADIOS2.c
+COMPILING configs/sim/bindings/Variables/ADMBaseX.c
+COMPILING configs/sim/bindings/Parameters/CanudaX_NPScalars_Parameters.c
+COMPILING configs/sim/bindings/Parameters/CarpetX_Parameters.c
+COMPILING configs/sim/bindings/Variables/AMReX.c
+COMPILING configs/sim/bindings/Variables/Arith.c
+COMPILING configs/sim/bindings/Variables/Boost.c
+COMPILING configs/sim/bindings/Parameters/CarpetXRegrid_Parameters.c
+COMPILING configs/sim/bindings/Parameters/CoordinatesX_Parameters.c
+COMPILING configs/sim/bindings/Variables/BoxInBox.c
+COMPILING configs/sim/bindings/Parameters/ErrorEstimator_Parameters.c
+COMPILING configs/sim/bindings/Variables/Cactus.c
+COMPILING configs/sim/bindings/Parameters/FFTW3_Parameters.c
+COMPILING configs/sim/bindings/Parameters/GSL_Parameters.c
+COMPILING configs/sim/bindings/Variables/CanudaX_BSSNMoL.c
+COMPILING configs/sim/bindings/Parameters/HDF5_Parameters.c
+COMPILING configs/sim/bindings/Parameters/IOUtil_Parameters.c
+COMPILING SpacetimeX/TwoPuncturesX/src/TwoPunctures.cc
+COMPILING configs/sim/bindings/Variables/CanudaX_ExactID.c
+COMPILING configs/sim/bindings/Parameters/Loop_Parameters.c
+COMPILING configs/sim/bindings/Parameters/MPI_Parameters.c
+COMPILING configs/sim/bindings/Variables/CanudaX_NPScalars.c
+COMPILING configs/sim/bindings/Parameters/Multipole_Parameters.c
+COMPILING configs/sim/bindings/Parameters/NSIMD_Parameters.c
+COMPILING configs/sim/bindings/Variables/CarpetX.c
+COMPILING configs/sim/bindings/Parameters/NewRadX_Parameters.c
+COMPILING configs/sim/bindings/Variables/CarpetXRegrid.c
+COMPILING configs/sim/bindings/Parameters/ODESolvers_Parameters.c
+COMPILING configs/sim/bindings/Parameters/OpenBLAS_Parameters.c
+COMPILING configs/sim/bindings/Variables/CoordinatesX.c
+COMPILING configs/sim/bindings/Parameters/OpenSSL_Parameters.c
+COMPILING configs/sim/bindings/Variables/ErrorEstimator.c
+COMPILING configs/sim/bindings/Parameters/PETSc_Parameters.c
+COMPILING CarpetX/Arith/src/arr.cxx
+COMPILING configs/sim/bindings/Parameters/PunctureTracker_Parameters.c
+COMPILING configs/sim/bindings/Variables/FFTW3.c
+COMPILING configs/sim/bindings/Parameters/Silo_Parameters.c
+COMPILING configs/sim/bindings/Variables/GSL.c
+COMPILING configs/sim/bindings/Parameters/SystemTopology_Parameters.c
+COMPILING configs/sim/bindings/Variables/HDF5.c
+COMPILING configs/sim/bindings/Parameters/TerminationTrigger_Parameters.c
+COMPILING configs/sim/bindings/Variables/IOUtil.c
+COMPILING configs/sim/bindings/Parameters/TestLoopX_Parameters.c
+COMPILING configs/sim/bindings/Variables/Loop.c
+COMPILING configs/sim/bindings/Parameters/TestNewRadX_Parameters.c
+COMPILING configs/sim/bindings/Variables/MPI.c
+COMPILING configs/sim/bindings/Parameters/Time_Parameters.c
+COMPILING configs/sim/bindings/Variables/Multipole.c
+COMPILING configs/sim/bindings/Parameters/TimerReport_Parameters.c
+COMPILING configs/sim/bindings/Parameters/TmunuBaseX_Parameters.c
+COMPILING configs/sim/bindings/Variables/NSIMD.c
+COMPILING configs/sim/bindings/Parameters/TwoPuncturesX_Parameters.c
+COMPILING configs/sim/bindings/Variables/NewRadX.c
+COMPILING configs/sim/bindings/Variables/ODESolvers.c
+COMPILING configs/sim/bindings/Parameters/hwloc_Parameters.c
+COMPILING configs/sim/bindings/Parameters/libjpeg_Parameters.c
+COMPILING configs/sim/bindings/Variables/OpenBLAS.c
+COMPILING configs/sim/bindings/Parameters/openPMD_Parameters.c
+COMPILING SpacetimeX/TwoPuncturesX/src/TP_utilities.cc
+COMPILING configs/sim/bindings/Variables/OpenSSL.c
+COMPILING configs/sim/bindings/Parameters/pthreads_Parameters.c
+COMPILING configs/sim/bindings/Parameters/ssht_Parameters.c
+COMPILING configs/sim/bindings/Variables/PETSc.c
+COMPILING configs/sim/bindings/Parameters/yaml_cpp_Parameters.c
+COMPILING configs/sim/bindings/Variables/PunctureTracker.c
+COMPILING configs/sim/bindings/Parameters/zlib_Parameters.c
+COMPILING CarpetX/Arith/src/cons.cxx
+COMPILING configs/sim/bindings/Variables/Silo.c
+COMPILING configs/sim/bindings/Variables/SystemTopology.c
+COMPILING configs/sim/bindings/build/Arith/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/Variables/TerminationTrigger.c
+COMPILING configs/sim/bindings/Variables/TestLoopX.c
+COMPILING SpacetimeX/TwoPuncturesX/src/ParamCheck.cc
+COMPILING configs/sim/bindings/Variables/TestNewRadX.c
+COMPILING configs/sim/bindings/Variables/Time.c
+COMPILING CarpetX/Arith/src/cplx.cxx
+COMPILING configs/sim/bindings/Variables/TimerReport.c
+COMPILING configs/sim/bindings/Variables/TmunuBaseX.c
+COMPILING configs/sim/bindings/Variables/TwoPuncturesX.c
+COMPILING SpacetimeX/TwoPuncturesX/src/Metadata.cc
+COMPILING configs/sim/bindings/Variables/hwloc.c
+COMPILING configs/sim/bindings/Variables/libjpeg.c
+COMPILING configs/sim/bindings/Variables/openPMD.c
+COMPILING configs/sim/bindings/Variables/pthreads.c
+COMPILING configs/sim/bindings/Variables/ssht.c
+COMPILING configs/sim/bindings/Variables/yaml_cpp.c
+COMPILING configs/sim/bindings/Variables/zlib.c
+COMPILING CarpetX/Arith/src/div.cxx
+COMPILING CarpetX/Arith/src/dual.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TwoPuncturesX.a
+COMPILING CarpetX/Arith/src/mat.cxx
+Checking status of thorn MPI
+COMPILING configs/sim/bindings/build/MPI/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_MPI.a
+COMPILING CarpetX/Arith/src/rational.cxx
+COMPILING configs/sim/bindings/Schedule/ScheduleADIOS2.c
+COMPILING configs/sim/bindings/Schedule/ScheduleADMBaseX.c
+COMPILING configs/sim/bindings/Schedule/ScheduleAMReX.c
+COMPILING configs/sim/bindings/Schedule/ScheduleArith.c
+COMPILING configs/sim/bindings/Schedule/ScheduleBoost.c
+COMPILING configs/sim/bindings/Schedule/ScheduleBoxInBox.c
+COMPILING configs/sim/bindings/Schedule/ScheduleCactus.c
+Checking status of thorn ADIOS2
+COMPILING configs/sim/bindings/Schedule/ScheduleCanudaX_BSSNMoL.c
+COMPILING configs/sim/bindings/build/ADIOS2/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_ADIOS2.a
+COMPILING configs/sim/bindings/Schedule/ScheduleCanudaX_ExactID.c
+COMPILING configs/sim/bindings/Schedule/ScheduleCanudaX_NPScalars.c
+Checking status of thorn AMReX
+COMPILING configs/sim/bindings/Schedule/ScheduleCarpetX.c
+Checking status of thorn Boost
+COMPILING configs/sim/bindings/Schedule/ScheduleCarpetXRegrid.c
+COMPILING configs/sim/bindings/build/AMReX/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_AMReX.a
+COMPILING configs/sim/bindings/Schedule/ScheduleCoordinatesX.c
+COMPILING configs/sim/bindings/build/Boost/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/Schedule/ScheduleErrorEstimator.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Boost.a
+COMPILING configs/sim/bindings/Schedule/ScheduleFFTW3.c
+COMPILING CarpetX/Arith/src/rten.cxx
+COMPILING configs/sim/bindings/Schedule/ScheduleGSL.c
+COMPILING CarpetX/Arith/src/simd.cxx
+COMPILING configs/sim/bindings/Schedule/ScheduleHDF5.c
+COMPILING configs/sim/bindings/Schedule/ScheduleIOUtil.c
+Checking status of thorn HDF5
+COMPILING configs/sim/bindings/Schedule/ScheduleLoop.c
+COMPILING configs/sim/bindings/Schedule/ScheduleMPI.c
+COMPILING configs/sim/bindings/build/HDF5/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_HDF5.a
+COMPILING configs/sim/bindings/Schedule/ScheduleMultipole.c
+COMPILING CarpetX/Arith/src/smallvector.cxx
+COMPILING configs/sim/bindings/Schedule/ScheduleNSIMD.c
+COMPILING configs/sim/bindings/Schedule/ScheduleNewRadX.c
+COMPILING configs/sim/bindings/Schedule/ScheduleODESolvers.c
+COMPILING configs/sim/bindings/Schedule/ScheduleOpenBLAS.c
+COMPILING configs/sim/bindings/Schedule/ScheduleOpenSSL.c
+COMPILING configs/sim/bindings/Schedule/SchedulePETSc.c
+COMPILING configs/sim/bindings/Schedule/SchedulePunctureTracker.c
+COMPILING configs/sim/bindings/Schedule/ScheduleSilo.c
+COMPILING configs/sim/bindings/Schedule/ScheduleSystemTopology.c
+COMPILING configs/sim/bindings/Schedule/ScheduleTerminationTrigger.c
+COMPILING configs/sim/bindings/Schedule/ScheduleTestLoopX.c
+COMPILING configs/sim/bindings/Schedule/ScheduleTestNewRadX.c
+COMPILING configs/sim/bindings/Schedule/ScheduleTime.c
+COMPILING configs/sim/bindings/Schedule/ScheduleTimerReport.c
+COMPILING CarpetX/Arith/src/spvect.cxx
+COMPILING configs/sim/bindings/Schedule/ScheduleTmunuBaseX.c
+Checking status of thorn PETSc
+COMPILING configs/sim/bindings/Schedule/ScheduleTwoPuncturesX.c
+COMPILING configs/sim/bindings/Schedule/Schedulehwloc.c
+COMPILING configs/sim/bindings/build/PETSc/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/Schedule/Schedulelibjpeg.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_PETSc.a
+COMPILING configs/sim/bindings/Schedule/ScheduleopenPMD.c
+COMPILING CarpetX/Arith/src/sum.cxx
+COMPILING configs/sim/bindings/Schedule/Schedulepthreads.c
+COMPILING configs/sim/bindings/Schedule/Schedulessht.c
+COMPILING configs/sim/bindings/Schedule/Scheduleyaml_cpp.c
+COMPILING configs/sim/bindings/Schedule/Schedulezlib.c
+COMPILING configs/sim/bindings/Schedule/BindingsSchedule.c
+COMPILING configs/sim/bindings/Schedule/BindingsParameterRecovery.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CactusBindings.a
+COMPILING CarpetX/Arith/src/ten3.cxx
+Checking status of thorn SystemTopology
+COMPILING CactusUtils/SystemTopology/src/system_topology.cc
+COMPILING configs/sim/bindings/build/SystemTopology/cctk_ThornBindings.c
+Checking status of thorn TimerReport
+Checking status of thorn Cactus
+COMPILING CactusUtils/TimerReport/src/Output.cc
+COMPILING Cactus/IO/IOMethods.c
+COMPILING Cactus/IO/OverloadIO.c
+COMPILING Cactus/IO/FortranBindingsIO.c
+COMPILING Cactus/comm/CactusSync.c
+COMPILING Cactus/comm/CactusDefaultComm.c
+COMPILING CarpetX/Arith/src/vec.cxx
+COMPILING Cactus/comm/OverloadComm.c
+In file included from /__w/canudax-tests/workspace/Cactus/src/comm/OverloadComm.c:20:
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h: In function ‘CCTKi_DummyExit’:
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:92:10: warning: function declared ‘noreturn’ has a ‘return’ statement
+   92 |   return 0;                                                     \
+      |          ^
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:84:59: note: in expansion of macro ‘__OVERLOADABLE_DUMMY’
+   84 | #define _OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)   __OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:83:36: note: in expansion of macro ‘_OVERLOADABLE_DUMMY’
+   83 | #define OVERLOADABLE_DUMMY(name)   _OVERLOADABLE_DUMMY(OVERLOADABLE_PREFIX, OVERLOADABLE_DUMMY_PREFIX, name)
+      |                                    ^~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/comm/OverloadComm.c:151:28: note: in expansion of macro ‘OVERLOADABLE_DUMMY’
+  151 | #define OVERLOADABLE(name) OVERLOADABLE_DUMMY(name)
+      |                            ^~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h:87:1: note: in expansion of macro ‘OVERLOADABLE’
+   87 | OVERLOADABLE(Exit)
+      | ^~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h: In function ‘CCTKi_DummyAbort’:
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:92:10: warning: function declared ‘noreturn’ has a ‘return’ statement
+   92 |   return 0;                                                     \
+      |          ^
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:84:59: note: in expansion of macro ‘__OVERLOADABLE_DUMMY’
+   84 | #define _OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)   __OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:83:36: note: in expansion of macro ‘_OVERLOADABLE_DUMMY’
+   83 | #define OVERLOADABLE_DUMMY(name)   _OVERLOADABLE_DUMMY(OVERLOADABLE_PREFIX, OVERLOADABLE_DUMMY_PREFIX, name)
+      |                                    ^~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/comm/OverloadComm.c:151:28: note: in expansion of macro ‘OVERLOADABLE_DUMMY’
+  151 | #define OVERLOADABLE(name) OVERLOADABLE_DUMMY(name)
+      |                            ^~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h:88:1: note: in expansion of macro ‘OVERLOADABLE’
+   88 | OVERLOADABLE(Abort)
+      | ^~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h: In function ‘CCTKi_DummyExit’:
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:92:10: warning: ‘noreturn’ function does return
+   92 |   return 0;                                                     \
+      |          ^
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:84:59: note: in expansion of macro ‘__OVERLOADABLE_DUMMY’
+   84 | #define _OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)   __OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:83:36: note: in expansion of macro ‘_OVERLOADABLE_DUMMY’
+   83 | #define OVERLOADABLE_DUMMY(name)   _OVERLOADABLE_DUMMY(OVERLOADABLE_PREFIX, OVERLOADABLE_DUMMY_PREFIX, name)
+      |                                    ^~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/comm/OverloadComm.c:151:28: note: in expansion of macro ‘OVERLOADABLE_DUMMY’
+  151 | #define OVERLOADABLE(name) OVERLOADABLE_DUMMY(name)
+      |                            ^~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h:87:1: note: in expansion of macro ‘OVERLOADABLE’
+   87 | OVERLOADABLE(Exit)
+      | ^~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h: In function ‘CCTKi_DummyAbort’:
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:92:10: warning: ‘noreturn’ function does return
+   92 |   return 0;                                                     \
+      |          ^
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:84:59: note: in expansion of macro ‘__OVERLOADABLE_DUMMY’
+   84 | #define _OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)   __OVERLOADABLE_DUMMY(prefix, dummy_prefix, name)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/OverloadMacros.h:83:36: note: in expansion of macro ‘_OVERLOADABLE_DUMMY’
+   83 | #define OVERLOADABLE_DUMMY(name)   _OVERLOADABLE_DUMMY(OVERLOADABLE_PREFIX, OVERLOADABLE_DUMMY_PREFIX, name)
+      |                                    ^~~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/comm/OverloadComm.c:151:28: note: in expansion of macro ‘OVERLOADABLE_DUMMY’
+  151 | #define OVERLOADABLE(name) OVERLOADABLE_DUMMY(name)
+      |                            ^~~~~~~~~~~~~~~~~~
+/__w/canudax-tests/workspace/Cactus/src/include/CommOverloadables.h:88:1: note: in expansion of macro ‘OVERLOADABLE’
+   88 | OVERLOADABLE(Abort)
+      | ^~~~~~~~~~~~
+COMPILING Cactus/comm/Interp.c
+COMPILING Cactus/comm/Reduction.c
+COMPILING CarpetX/Arith/src/vect.cxx
+COMPILING Cactus/util/CactusTimers.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_SystemTopology.a
+COMPILING Cactus/util/File.c
+COMPILING Cactus/util/ParseFile.c
+COMPILING Cactus/util/RegisterKeyedFunction.c
+COMPILING Cactus/util/StoreKeyedData.c
+COMPILING Cactus/util/StoreNamedData.c
+COMPILING Cactus/util/Misc.c
+COMPILING Cactus/util/StoreHandledData.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Arith.a
+COMPILING Cactus/util/SKBinTree.c
+COMPILING Cactus/schedule/ScheduleSorter.c
+COMPILING configs/sim/bindings/build/TimerReport/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TimerReport.a
+COMPILING Cactus/util/Hash.c
+Checking status of thorn Silo
+COMPILING Cactus/schedule/ScheduleCreater.c
+COMPILING Cactus/main/ActiveThorns.c
+COMPILING Cactus/util/Malloc.c
+COMPILING Cactus/util/Math.c
+COMPILING ExternalLibraries/Silo/src/silo.cxx
+COMPILING Cactus/schedule/ScheduleTraverse.c
+COMPILING Cactus/util/String.c
+COMPILING configs/sim/bindings/build/Silo/cctk_ThornBindings.c
+COMPILING Cactus/main/Banner.c
+Checking status of thorn openPMD
+COMPILING Cactus/util/StringList.c
+COMPILING Cactus/main/CactusDefaultInitialise.c
+COMPILING Cactus/main/CactusDefaultEvolve.c
+COMPILING Cactus/util/Table.c
+COMPILING configs/sim/bindings/build/openPMD/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_openPMD.a
+COMPILING Cactus/main/CactusDefaultShutdown.c
+COMPILING Cactus/main/CactusDefaultMainLoopIndex.c
+COMPILING Cactus/main/CallStartupFunctions.c
+COMPILING Cactus/main/CommandLine.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Silo.a
+COMPILING configs/sim/bindings/build/Cactus/cctk_ThornBindings.c
+Checking status of thorn Loop
+COMPILING Cactus/main/Complex.c
+COMPILING Cactus/main/ConfigData.c
+COMPILING Cactus/main/Coord.c
+COMPILING Cactus/main/DebugDefines.c
+COMPILING Cactus/main/DefaultTimers.c
+COMPILING Cactus/main/Dummies.c
+COMPILING Cactus/main/flesh.cc
+COMPILING CarpetX/Loop/src/loop.cxx
+COMPILING Cactus/main/FortranWrappers.c
+COMPILING Cactus/main/GHExtensions.c
+COMPILING Cactus/main/Groups.c
+COMPILING Cactus/util/Time.c
+COMPILING Cactus/piraha/AutoGrammar.cc
+COMPILING Cactus/util/Network.c
+COMPILING Cactus/util/PointerTo.F90
+COMPILING Cactus/main/GroupsOnGH.c
+COMPILING configs/sim/bindings/build/Loop/cctk_ThornBindings.c
+COMPILING Cactus/piraha/Boundary.cc
+COMPILING Cactus/main/InitialiseCactus.c
+COMPILING Cactus/main/InitialiseDataStructures.c
+COMPILING Cactus/main/MainUtils.c
+COMPILING Cactus/main/Names.c
+COMPILING CarpetX/Loop/src/loopcontrol.cxx
+COMPILING Cactus/main/OverloadMain.c
+COMPILING Cactus/main/Parameters.c
+COMPILING Cactus/main/ProcessCommandLine.c
+COMPILING Cactus/main/ProcessEnvironment.c
+COMPILING Cactus/main/ProcessParameterDatabase.c
+COMPILING Cactus/main/RDWR.cc
+COMPILING Cactus/main/ScheduleInterface.c
+COMPILING Cactus/piraha/Bracket.cc
+COMPILING Cactus/main/SetParams.c
+COMPILING Cactus/main/ShutdownCactus.c
+COMPILING Cactus/main/Subsystems.c
+COMPILING Cactus/main/Termination.c
+COMPILING Cactus/main/Traverse.c
+COMPILING Cactus/main/WarnLevel.c
+COMPILING Cactus/piraha/Call.cc
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Loop.a
+COMPILING Cactus/piraha/Dot.cc
+Checking status of thorn ADMBaseX
+COMPILING configs/sim/bindings/build/ADMBaseX/cctk_ThornBindings.c
+Checking status of thorn BoxInBox
+Checking status of thorn CanudaX_BSSNMoL
+COMPILING CarpetX/ADMBaseX/src/admbase.cxx
+COMPILING CarpetX/BoxInBox/src/boxinbox.cxx
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/evolve_utils.cxx
+COMPILING Cactus/piraha/End.cc
+COMPILING configs/sim/bindings/build/BoxInBox/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_BoxInBox.a
+COMPILING configs/sim/bindings/build/CanudaX_BSSNMoL/cctk_ThornBindings.c
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/error.cxx
+COMPILING CarpetX/ADMBaseX/src/linear_wave.cxx
+COMPILING Cactus/piraha/Grammar.cc
+COMPILING Cactus/piraha/Group.cc
+Checking status of thorn CanudaX_ExactID
+COMPILING CanudaX_Lean/CanudaX_ExactID/src/calc_KQI_ana.cxx
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/adm_vs_bssn.cxx
+COMPILING CarpetX/ADMBaseX/src/noise.cxx
+COMPILING Cactus/piraha/ILiteral.cc
+COMPILING Cactus/piraha/Literal.cc
+COMPILING CanudaX_Lean/CanudaX_ExactID/src/calc_GaugeWave.cxx
+COMPILING Cactus/piraha/Lookup.cc
+COMPILING Cactus/piraha/Matcher.cc
+COMPILING CanudaX_Lean/CanudaX_ExactID/src/calc_ShiftedGaugeWave.cxx
+COMPILING Cactus/piraha/Multi.cc
+COMPILING Cactus/piraha/NegLookAhead.cc
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_ADMBaseX.a
+COMPILING Cactus/piraha/Or.cc
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/add_dissipation.cxx
+COMPILING CanudaX_Lean/CanudaX_ExactID/src/calc_LinearizedWave.cxx
+COMPILING Cactus/piraha/ReParse.cc
+COMPILING configs/sim/bindings/build/CanudaX_ExactID/cctk_ThornBindings.c
+Checking status of thorn CanudaX_NPScalars
+COMPILING CanudaX_Lean/CanudaX_NPScalars/src/NP_calc_psi_gfs.cxx
+COMPILING Cactus/piraha/Seq.cc
+COMPILING CanudaX_Lean/CanudaX_ExactID/src/calc_TeukWave.cxx
+COMPILING Cactus/piraha/Start.cc
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Cactus.a
+COMPILING configs/sim/bindings/build/CanudaX_NPScalars/cctk_ThornBindings.c
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/apply_newrad.cxx
+COMPILING CanudaX_Lean/CanudaX_NPScalars/src/ParamCheck.cxx
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/calc_bssn_rhs.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CanudaX_ExactID.a
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/bssn_constraints.cxx
+Checking status of thorn CarpetXRegrid
+COMPILING CarpetX/CarpetXRegrid/src/regrid_error.cxx
+COMPILING configs/sim/bindings/build/CarpetXRegrid/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CarpetXRegrid.a
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/sync.cxx
+Checking status of thorn CoordinatesX
+COMPILING CarpetX/CoordinatesX/src/coordinates.cxx
+COMPILING configs/sim/bindings/build/CoordinatesX/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CoordinatesX.a
+COMPILING CanudaX_Lean/CanudaX_BSSNMoL/src/ParamCheck.cxx
+Checking status of thorn ErrorEstimator
+COMPILING CarpetX/ErrorEstimator/src/error.cxx
+COMPILING configs/sim/bindings/build/ErrorEstimator/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_ErrorEstimator.a
+Checking status of thorn Multipole
+COMPILING SpacetimeX/Multipole/src/integrate.cxx
+COMPILING SpacetimeX/Multipole/src/io.cxx
+COMPILING SpacetimeX/Multipole/src/multipole.cxx
+COMPILING SpacetimeX/Multipole/src/sphericalharmonic.cxx
+COMPILING SpacetimeX/Multipole/src/surface.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CanudaX_NPScalars.a
+COMPILING configs/sim/bindings/build/Multipole/cctk_ThornBindings.c
+Checking status of thorn PunctureTracker
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_Multipole.a
+COMPILING configs/sim/bindings/build/PunctureTracker/cctk_ThornBindings.c
+Checking status of thorn TmunuBaseX
+COMPILING CarpetX/TmunuBaseX/src/tmunubase.cxx
+COMPILING SpacetimeX/PunctureTracker/src/puncture.cxx
+COMPILING configs/sim/bindings/build/TmunuBaseX/cctk_ThornBindings.c
+COMPILING SpacetimeX/PunctureTracker/src/puncture_tracker.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TmunuBaseX.a
+Checking status of thorn CarpetX
+COMPILING configs/sim/bindings/build/CarpetX/cctk_ThornBindings.c
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_PunctureTracker.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CanudaX_BSSNMoL.a
+COMPILING CarpetX/CarpetX/src/boundaries.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_int_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_int_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_neg_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_neg_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_neg_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_pos_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_pos_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_int_pos_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_int_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_int_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_int_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_neg_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_neg_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_neg_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_pos_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_pos_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_neg_pos_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_int_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_int_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_int_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_neg_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_neg_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_neg_pos.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_pos_int.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_pos_neg.cxx
+COMPILING CarpetX/CarpetX/src/boundaries_impl_pos_pos_pos.cxx
+COMPILING CarpetX/CarpetX/src/driver.cxx
+COMPILING CarpetX/CarpetX/src/fillpatch.cxx
+In file included from /__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/driver.cxx:4:
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/fillpatch.hxx:26:2: warning: #warning "TODO: Restrict" [-Wcpp]
+   26 | #warning "TODO: Restrict"
+      |  ^~~~~~~
+In file included from /__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/fillpatch.cxx:1:
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/fillpatch.hxx:26:2: warning: #warning "TODO: Restrict" [-Wcpp]
+   26 | #warning "TODO: Restrict"
+      |  ^~~~~~~
+COMPILING CarpetX/CarpetX/src/interpolate.cxx
+COMPILING CarpetX/CarpetX/src/io.cxx
+COMPILING CarpetX/CarpetX/src/io_adios2.cxx
+COMPILING CarpetX/CarpetX/src/io_meta.cxx
+COMPILING CarpetX/CarpetX/src/io_norm.cxx
+COMPILING CarpetX/CarpetX/src/io_openpmd.cxx
+COMPILING CarpetX/CarpetX/src/io_silo.cxx
+COMPILING CarpetX/CarpetX/src/io_tsv.cxx
+COMPILING CarpetX/CarpetX/src/linsolve.cxx
+COMPILING CarpetX/CarpetX/src/logo.cxx
+COMPILING CarpetX/CarpetX/src/mpi_types.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_cons.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_ddf.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_eno.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_hermite.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_minmod.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_natural.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_poly.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_poly_cons3lfb.cxx
+COMPILING CarpetX/CarpetX/src/prolongate_3d_rf2_impl_poly_eno3lfb.cxx
+COMPILING CarpetX/CarpetX/src/reduction.cxx
+COMPILING CarpetX/CarpetX/src/schedule.cxx
+In file included from /__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/schedule.cxx:2:
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/fillpatch.hxx:26:2: warning: #warning "TODO: Restrict" [-Wcpp]
+   26 | #warning "TODO: Restrict"
+      |  ^~~~~~~
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/schedule.cxx:2714:2: warning: #warning "TODO" [-Wcpp]
+ 2714 | #warning "TODO"
+      |  ^~~~~~~
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/schedule.cxx:2785:2: warning: #warning "TODO: Allow different restriction operators, and ensure this is conservative" [-Wcpp]
+ 2785 | #warning                                                                       \
+      |  ^~~~~~~
+COMPILING CarpetX/CarpetX/src/task_manager.cxx
+COMPILING CarpetX/CarpetX/src/timer.cxx
+COMPILING CarpetX/CarpetX/src/valid.cxx
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/valid.cxx:278:2: warning: #warning "TODO" [-Wcpp]
+  278 | #warning "TODO"
+      |  ^~~~~~~
+/__w/canudax-tests/workspace/Cactus/arrangements/CarpetX/CarpetX/src/valid.cxx:499:2: warning: #warning "TODO" [-Wcpp]
+  499 | #warning "TODO"
+      |  ^~~~~~~
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_CarpetX.a
+Checking status of thorn NewRadX
+Checking status of thorn ODESolvers
+Checking status of thorn TestLoopX
+COMPILING configs/sim/bindings/build/ODESolvers/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/NewRadX/cctk_ThornBindings.c
+COMPILING configs/sim/bindings/build/TestLoopX/cctk_ThornBindings.c
+COMPILING CarpetX/TestLoopX/src/testloop.cxx
+COMPILING SpacetimeX/NewRadX/src/newradx.cxx
+COMPILING CarpetX/ODESolvers/src/solve.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_NewRadX.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TestLoopX.a
+Checking status of thorn TestNewRadX
+COMPILING configs/sim/bindings/build/TestNewRadX/cctk_ThornBindings.c
+COMPILING SpacetimeX/TestNewRadX/src/test_newradx.cxx
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_TestNewRadX.a
+Creating /__w/canudax-tests/workspace/Cactus/configs/sim/lib/libthorn_ODESolvers.a
+Creating cactus_sim in /__w/canudax-tests/workspace/Cactus/exe from ExternalLibraries/ADIOS2 CarpetX/ADMBaseX ExternalLibraries/AMReX CarpetX/Arith ExternalLibraries/Boost CarpetX/BoxInBox CanudaX_Lean/CanudaX_BSSNMoL CanudaX_Lean/CanudaX_ExactID CanudaX_Lean/CanudaX_NPScalars CarpetX/CarpetX CarpetX/CarpetXRegrid CarpetX/CoordinatesX CarpetX/ErrorEstimator ExternalLibraries/FFTW3 ExternalLibraries/GSL ExternalLibraries/HDF5 CactusBase/IOUtil CarpetX/Loop ExternalLibraries/MPI SpacetimeX/Multipole ExternalLibraries/NSIMD SpacetimeX/NewRadX CarpetX/ODESolvers ExternalLibraries/OpenBLAS ExternalLibraries/OpenSSL ExternalLibraries/PETSc SpacetimeX/PunctureTracker ExternalLibraries/Silo CactusUtils/SystemTopology CactusUtils/TerminationTrigger CarpetX/TestLoopX SpacetimeX/TestNewRadX CactusBase/Time CactusUtils/TimerReport CarpetX/TmunuBaseX SpacetimeX/TwoPuncturesX ExternalLibraries/hwloc ExternalLibraries/libjpeg ExternalLibraries/openPMD ExternalLibraries/pthreads ExternalLibraries/ssht ExternalLibraries/yaml_cpp ExternalLibraries/zlib
+Done creating cactus_sim.
+All done !
+Building utilities for sim
+Building utilities for sim
+Copying Carpetx2ygraphCat from /__w/canudax-tests/workspace/Cactus/arrangements/CanudaX_Lean/CanudaX_BSSNMoL/src/util/Carpetx2ygraphCat.py to /__w/canudax-tests/workspace/Cactus/exe/sim
+Compiling /__w/canudax-tests/workspace/Cactus/arrangements/ExternalLibraries/HDF5/src/util/hdf5_merge.c
+Compiling /__w/canudax-tests/workspace/Cactus/arrangements/ExternalLibraries/HDF5/src/util/hdf5_extract.c
+Compiling /__w/canudax-tests/workspace/Cactus/arrangements/ExternalLibraries/HDF5/src/util/hdf5_double_to_single.c
+Copying mpirun from /usr/bin/mpirun to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying mpirun.openmpi from /usr/bin/mpirun.openmpi to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying ompi-clean from /usr/bin/ompi-clean to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying ompi_info from /usr/bin/ompi_info to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying ompi-server from /usr/bin/ompi-server to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-bind from /usr/bin/hwloc-bind to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-calc from /usr/bin/hwloc-calc to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-distrib from /usr/bin/hwloc-distrib to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-info from /usr/bin/hwloc-info to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-ls from /usr/bin/hwloc-ls to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying hwloc-ps from /usr/bin/hwloc-ps to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying lstopo from /usr/bin/lstopo to /__w/canudax-tests/workspace/Cactus/exe/sim
+Copying lstopo-no-graphics from /usr/bin/lstopo-no-graphics to /__w/canudax-tests/workspace/Cactus/exe/sim
+Creating hdf5_double_to_single in /__w/canudax-tests/workspace/Cactus/exe/sim from /__w/canudax-tests/workspace/Cactus/configs/sim/build/HDF5/hdf5_double_to_single.o
+Creating hdf5_extract in /__w/canudax-tests/workspace/Cactus/exe/sim from /__w/canudax-tests/workspace/Cactus/configs/sim/build/HDF5/hdf5_extract.o
+Creating hdf5_merge in /__w/canudax-tests/workspace/Cactus/exe/sim from /__w/canudax-tests/workspace/Cactus/configs/sim/build/HDF5/hdf5_merge.o
+Done.

@@ -1,0 +1,168 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <title>Summary of Tests</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <style>
+            .bk-root .bk {
+                margin: 0 auto !important;
+            }
+            </style>
+            <style>
+            .sidebar {
+                height: 100%; 
+                width: 150px;
+                position: fixed;
+                z-index: 1; 
+                top: 0; 
+                left: 0;
+                background-color: #212529; 
+                overflow-x: hidden;
+                padding-top: 20px; 
+            }
+            .sidebar a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 18px;
+                color: #dbdcdd;
+                display: block;
+                }
+            .sidebar a:hover {
+                color: white;
+            }
+            .container{
+              padding-left: 150px;
+              font-size: 18px;
+            }
+                        /* On screens that are less than 700px wide, make the sidebar into a topbar */
+            @media screen and (max-width: 500px) {
+            .sidebar {
+              display: none;
+            }
+            .container {
+              padding-left:0px;
+            }
+            }
+            </style>
+            <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.1.min.js"
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+(function() {
+  const fn = function() {
+    Bokeh.safely(function() {
+      (function(root) {
+        function embed_document(root) {
+        const docs_json = '{"1dba4abb-bf44-4dbf-b1cd-04545cec3a9a":{"version":"3.8.1","title":"Bokeh Application","config":{"type":"object","name":"DocumentConfig","id":"p1293","attributes":{"notifications":{"type":"object","name":"Notifications","id":"p1294"}}},"roots":[{"type":"object","name":"Figure","id":"p1242","attributes":{"width":1200,"sizing_mode":"scale_width","x_range":{"type":"object","name":"FactorRange","id":"p1252"},"y_range":{"type":"object","name":"DataRange1d","id":"p1244"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1253"},"y_scale":{"type":"object","name":"LinearScale","id":"p1254"},"title":{"type":"object","name":"Title","id":"p1245","attributes":{"text":"Compilation Warning Thorns"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1284","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1239","attributes":{"selected":{"type":"object","name":"Selection","id":"p1240","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1241"},"data":{"type":"map","entries":[["cts",[]],["wts",[]]]}}},"view":{"type":"object","name":"CDSView","id":"p1285","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1286"}}},"glyph":{"type":"object","name":"VBar","id":"p1281","attributes":{"x":{"type":"field","field":"wts"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"cts"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"wts","transform":{"type":"object","name":"CategoricalColorMapper","id":"p1277","attributes":{"palette":[],"factors":[]}}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1282","attributes":{"x":{"type":"field","field":"wts"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"cts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"wts","transform":{"id":"p1277"}},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1283","attributes":{"x":{"type":"field","field":"wts"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"cts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"wts","transform":{"id":"p1277"}},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1251","attributes":{"tools":[{"type":"object","name":"TapTool","id":"p1265","attributes":{"renderers":"auto"}},{"type":"object","name":"PanTool","id":"p1266"},{"type":"object","name":"WheelZoomTool","id":"p1267","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1268","attributes":{"dimensions":"both","overlay":{"type":"object","name":"BoxAnnotation","id":"p1269","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1275","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1274","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"ResetTool","id":"p1276"}],"active_scroll":{"id":"p1267"}}},"toolbar_location":"below","left":[{"type":"object","name":"LinearAxis","id":"p1260","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1261","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1262"},"axis_label":"Number of Warnings","major_label_policy":{"type":"object","name":"AllLabels","id":"p1263"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1255","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1256"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1257"},"axis_label":"Name of Thorn","major_label_policy":{"type":"object","name":"AllLabels","id":"p1258"}}}],"center":[{"type":"object","name":"Grid","id":"p1259","attributes":{"axis":{"id":"p1255"}}},{"type":"object","name":"Grid","id":"p1264","attributes":{"dimension":1,"axis":{"id":"p1260"}}}]}}]}}';
+        const render_items = [{"docid":"1dba4abb-bf44-4dbf-b1cd-04545cec3a9a","roots":{"p1242":"df3cbace-5433-4f8b-b5f3-8d611b495b54"},"root_ids":["p1242"]}];
+        root.Bokeh.embed.embed_items(docs_json, render_items);
+        }
+        if (root.Bokeh !== undefined) {
+          embed_document(root);
+        } else {
+          let attempts = 0;
+          const timer = setInterval(function(root) {
+            if (root.Bokeh !== undefined) {
+              clearInterval(timer);
+              embed_document(root);
+            } else {
+              attempts++;
+              if (attempts > 100) {
+                clearInterval(timer);
+                console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+              }
+            }
+          }, 10, root)
+        }
+      })(window);
+    });
+  };
+  if (document.readyState != "loading") fn();
+  else document.addEventListener("DOMContentLoaded", fn);
+})();
+</script>
+
+
+        </head>
+        <body>
+            <div class="sidebar">
+            </div>
+            <script src='version.js'>
+            </script>
+            <div class="container">
+                <h1 style="text-align:center">Some Tests Failed</h1>
+                <h3 style="text-align:center"><a href="https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2">Build #2</a></h3>
+                <table class="table table-bordered " >
+                <caption style="text-align:center;font-weight: bold;caption-side:top">Summary</caption>
+                        <tr><th>Time</th><td>Thu Dec 25 03:22:51 AM UTC 2025</td><tr>
+        <tr><th>Host</th><td>14b116b53300</td><tr>
+        <tr><th>Processes</th><td>2</td><tr>
+        <tr><th>User</th><td>root</td><tr>
+        <tr><th>Total available tests</th><td>6</td><tr>
+        <tr><th>Unrunnable tests</th><td>1</td><tr>
+        <tr><th>Runnable tests</th><td>5</td><tr>
+        <tr><th>Total number of thorns</th><td>44</td><tr>
+        <tr><th>Number of tested thorns</th><td>2</td><tr>
+        <tr><th>Number of tests passed</th><td>4</td><tr>
+        <tr><th>Number passed only to set tolerance</th><td>1</td><tr>
+        <tr><th>Number failed</th><td>1</td><tr>
+
+                </table>
+                <br>
+                <table class="table table-bordered " >
+                <caption style="text-align:center;font-weight: bold;caption-side:top">Commits in Last Push</caption>
+                <tr> <td> <b> Commit: </b> </td> <td> <b> 1 </b> </td> </tr> 
+
+<tr> <td> Date: (In UTC)  </td> <td> 2025-12-22 22:18:37+00:00  </td> </tr> 
+
+<tr> <td> Message: </td> <td>Update pipeline to dispatch to chcheng3/canudax-tests<br></td> </tr> 
+
+                </table>
+                <table class="table table-bordered " >
+    <caption style="text-align:center;font-weight: bold;caption-side:top">Failed Tests and Changes</caption>
+    <tr><th></th><th>logs(1_process)</th><th>logs(2_processes)</th><th>diffs(1_process)</th><th>diffs(2_processes)</th></tr>
+<tr><th colspan="5">Failed Tests</th></tr>
+  <tr><td>teukolsky (from CanudaX_NPScalars)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.log'>log</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td></tr>
+<tr><th colspan="5">Newly Passing Tests</th></tr>
+  <tr><td>gaugewave (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/gaugewave.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/gaugewave.log'>log</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/gaugewave.diffs'>diff</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/gaugewave.diffs'>diff</a></td></tr>
+  <tr><td>minkowski (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/minkowski.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/minkowski.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+  <tr><td>twopunctures (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/twopunctures.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/twopunctures.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+  <tr><td>twopunctures_amr (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/twopunctures_amr.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/twopunctures_amr.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+<tr><th colspan="5">Newly Failing Tests</th></tr>
+  <tr><td>teukolsky (from CanudaX_NPScalars)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.log'>log</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td></tr>
+<tr><th colspan="5">Newly Added Tests</th></tr>
+  <tr><td>gaugewave (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/gaugewave.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/gaugewave.log'>log</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/gaugewave.diffs'>diff</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/gaugewave.diffs'>diff</a></td></tr>
+  <tr><td>minkowski (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/minkowski.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/minkowski.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+  <tr><td>twopunctures (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/twopunctures.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/twopunctures.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+  <tr><td>twopunctures_amr (from CanudaX_BSSNMoL)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_BSSNMoL/twopunctures_amr.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_BSSNMoL/twopunctures_amr.log'>log</a></td><td>Not Available</td><td>Not Available</td></tr>
+  <tr><td>teukolsky (from CanudaX_NPScalars)</td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.log'>log</a></td>  <td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.log'>log</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_1/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td><td><a href='https://github.com/chcheng3/canudax-tests/tree/gh-pages/records/version_2/sim_2_2/CanudaX_NPScalars/teukolsky.diffs'>diff</a></td></tr>
+<tr><th colspan="5">Removed Tests</th></tr>
+<tr><td></td></tr></table>
+                <br>
+                <table class="table table-bordered " >
+    <caption style="text-align:center;font-weight: bold;caption-side:top">Longest Tests</caption>
+<tr><th>Test Name</th><th>Running Time</th>   <tr><td>twopunctures</td><td>10.2s</td></tr>
+   <tr><td>twopunctures_amr</td><td>8.4s</td></tr>
+   <tr><td>minkowski</td><td>5.0s</td></tr>
+   <tr><td>teukolsky</td><td>2.7s</td></tr>
+   <tr><td>gaugewave</td><td>2.0s</td></tr>
+</table><br>
+                <br>
+                 <table class="table table-bordered " >
+    <caption style="text-align:center;font-weight: bold;caption-side:top">Unrunnable Tests</caption>
+<tr><th>Tests Missed for Lack Of Thorns</th><th>Missing Thorns</th></tr>
+  <tr><td>teukolsky_lean</td><td>CARPETINTERP, AEILOCALINTERP, CARTGRID3D, COORDBASE, SYMBASE, BOUNDARY, CARPET, CARPETLIB, CARPETSLAB, CARPETREGRID2, CARPETREDUCE, INITBASE, CARPETIOASCII, IOBASIC, ADMBASE, ADMMACROS, GENERICFD, TMUNUBASE, STATICCONFORMAL, COORDGAUGE, SPACEMASK, IDLINEARWAVES, LOOPCONTROL, NPSCALARS, LEANBSSNMOL, NEWRAD, GENERICFD, MOL, REFLECTIONSYMMETRY</td></tr>
+<tr><th>Tests missed for different number of processors required:</th><th>Processors Required</th></tr>
+</table>
+                <br>
+                <table style="margin: 0 auto;">
+                    <!-- height determined by height of plots inside (600ox) -->
+                    <iframe src="plot.html" style="height: 700px; width: 100%"></iframe>
+                </table>
+                <table style="margin: 0 auto;">
+                    <div id="df3cbace-5433-4f8b-b5f3-8d611b495b54" data-root-id="p1242" style="display: contents;"></div>
+                </table>
+            <div>
+            
+        </body>
+    </html>
+        
