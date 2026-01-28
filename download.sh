@@ -10,6 +10,11 @@ cd "$WORKSPACE"
 # Check out Cactus
 wget https://raw.githubusercontent.com/gridaphobe/CRL/master/GetComponents
 chmod a+x GetComponents
-./GetComponents --no-parallel --shallow https://bitbucket.org/canuda/canudax_lean/raw/master/CanudaX.th
+
+# Download thornlist on master branch
+curl -L https://bitbucket.org/canuda/canudax_lean/raw/master/CanudaX.th -o CanudaX.th
+
+# Get thorns from master thornlist
+./GetComponents --no-parallel --shallow CanudaX.th
 
 cd Cactus
