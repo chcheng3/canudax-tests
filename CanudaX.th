@@ -201,13 +201,13 @@ SpacetimeX/TwoPuncturesX
 # CanudaX -- Lean
 !TARGET    = $ARR
 !TYPE      = git
-!URL       = https://bitbucket.org/canuda/canudax_lean.git
+!URL       = https://bitbucket.org/canuda/canudax.git
 !REPO_BRANCH = master
 !REPO_PATH = $2
 !CHECKOUT =
-CanudaX_Lean/CanudaX_BSSNMoL
-CanudaX_Lean/CanudaX_ExactID
-CanudaX_Lean/CanudaX_NPScalars
+CanudaX/CanudaX_BSSNMoL
+CanudaX/CanudaX_ExactID
+CanudaX/CanudaX_NPScalars
 
 
 # # Canuda -- Lean
