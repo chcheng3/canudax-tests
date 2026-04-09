@@ -1,0 +1,1203 @@
+/__w/canudax-tests/workspace/simulations/TestJob01_temp_2/output-0000/TEST/sim/CanudaX_BSSNMoL
+Preparing:
++ set -e
++ cd output-0000-active
++ echo Checking:
+Checking:
++ pwd
+/__w/canudax-tests/workspace/simulations/TestJob01_temp_2/output-0000/TEST/sim/CanudaX_BSSNMoL/output-0000-active
++ hostname
+809c95107244
++ date
+Thu Apr  9 04:55:36 AM UTC 2026
++ echo Environment:
+Environment:
++ export SIMULATION_ID=simulation-TestJob01_temp_2-actions-cpu-real64-actions-root-2026.04.09-04.55.35-14238
++ SIMULATION_ID=simulation-TestJob01_temp_2-actions-cpu-real64-actions-root-2026.04.09-04.55.35-14238
++ export CACTUS_NUM_PROCS=2
++ CACTUS_NUM_PROCS=2
++ export CACTUS_NUM_THREADS=1
++ CACTUS_NUM_THREADS=1
++ export CACTUS_SET_THREAD_BINDINGS=0
++ CACTUS_SET_THREAD_BINDINGS=0
++ export GLIBCXX_FORCE_NEW=1
++ GLIBCXX_FORCE_NEW=1
++ export GMON_OUT_PREFIX=gmon.out
++ GMON_OUT_PREFIX=gmon.out
++ export OMP_DISPLAY_ENV=TRUE
++ OMP_DISPLAY_ENV=TRUE
++ export OMP_MAX_TASKS=100
++ OMP_MAX_TASKS=100
++ export OMP_NUM_THREADS=1
++ OMP_NUM_THREADS=1
++ export OMP_PLACES=cores
++ OMP_PLACES=cores
++ export OMP_PROC_BIND=FALSE
++ OMP_PROC_BIND=FALSE
++ export OMP_STACKSIZE=8192
++ OMP_STACKSIZE=8192
++ env
++ sort
++ echo Starting:
+Starting:
+++ date +%s
++ export CACTUS_STARTTIME=1775710536
++ CACTUS_STARTTIME=1775710536
++ mpiexec -n 2 /__w/canudax-tests/workspace/simulations/TestJob01_temp_2/SIMFACTORY/exe/cactus_sim -L 3 /__w/canudax-tests/workspace/simulations/TestJob01_temp_2/output-0000/arrangements/CanudaX/CanudaX_BSSNMoL/test/gaugewave.par
+
+OPENMP DISPLAY ENVIRONMENT BEGIN
+  _OPENMP = '201511'
+  [host] OMP_DYNAMIC = 'FALSE'
+  [host] OMP_NESTED = 'FALSE'
+  [host] OMP_NUM_THREADS = '1'
+  [host] OMP_SCHEDULE = 'DYNAMIC'
+  [host] OMP_PROC_BIND = 'FALSE
+OPENMP DISPLAY ENVIRONMENT BEGIN
+  _OPENMP = '201511'
+  [host] OMP_DYNAMIC = 'FALSE'
+  [host] OMP_NESTED = 'FALSE'
+  [host] OMP_NUM_THREADS = '1'
+  [host] OMP_SCHEDULE = 'DYNAMIC'
+  [host] OMP_PROC_BIND = 'FALSE'
+  [host] OMP_PLACES = ''
+  [host] OMP_STACKSIZE = '8388608'
+  [host] OMP_WAIT_POLICY = 'PASSIVE'
+  [host] OMP_THREAD_LIMIT = '4294967295'
+  [host] OMP_MAX_ACTIVE_LEVELS = '1'
+  [host] OMP_NUM_TEAMS = '0'
+  [host] OMP_TEAMS_THREAD_LIMIT = '0'
+  [all] OMP_CANCELLATION = 'FALSE'
+'
+  [host] OMP_PLACES = ''
+  [host] OMP_STACKSIZE = '8388608'
+  [host] OMP_WAIT_POLICY = 'PASSIVE'
+  [host] OMP_THREAD_LIMIT = '4294967295'
+  [host] OMP_MAX_ACTIVE_LEVELS = '1'
+  [host] OMP_NUM_TEAMS = '0'
+  [host] OMP_TEAMS_THREAD_LIMIT = '0'
+  [all] OMP_CANCELLATION = 'FALSE'
+  [all] OMP_DEFAULT_DEVICE = '0'
+  [all] OMP_MAX_TASK_PRIORITY = '0'
+  [all] OMP_DISPLAY_AFFINITY = 'FALSE'
+  [host] OMP_AFFINITY_FORMAT = 'level %L thread %i affinity %A'
+  [host] OMP_ALLOCATOR = 'omp_default_mem_alloc'
+  [all] OMP_TARGET_OFFLOAD = 'DEFAULT'
+OPENMP DISPLAY ENVIRONMENT END
+  [all] OMP_DEFAULT_DEVICE = '0'
+  [all] OMP_MAX_TASK_PRIORITY = '0'
+  [all] OMP_DISPLAY_AFFINITY = 'FALSE'
+  [host] OMP_AFFINITY_FORMAT = 'level %L thread %i affinity %A'
+  [host] OMP_ALLOCATOR = 'omp_default_mem_alloc'
+  [all] OMP_TARGET_OFFLOAD = 'DEFAULT'
+OPENMP DISPLAY ENVIRONMENT END
+INFO (Cactus): Increased logging level from 0 to 3
+--------------------------------------------------------------------------------
+
+       10                                  
+  1   0101       ************************  
+  01  1010 10      The Cactus Code V4.18.0    
+ 1010 1101 011      www.cactuscode.org     
+  1001 100101    ************************  
+    00010101                               
+     100011     (c) Copyright The Authors  
+      0100      GNU Licensed. No Warranty  
+      0101                                 
+--------------------------------------------------------------------------------
+
+Cactus version:    4.18.0
+Compile date:      Apr 09 2026 (04:52:48)
+Run date:          Apr 09 2026 (04:55:36+0000)
+Run host:          809c95107244 (pid=14286)
+Working directory: /__w/canudax-tests/workspace/simulations/TestJob01_temp_2/output-0000/TEST/sim/CanudaX_BSSNMoL
+Executable:        /__w/canudax-tests/workspace/simulations/TestJob01_temp_2/SIMFACTORY/exe/cactus_sim
+Parameter file:    /__w/canudax-tests/workspace/simulations/TestJob01_temp_2/output-0000/arrangements/CanudaX/CanudaX_BSSNMoL/test/gaugewave.par
+--------------------------------------------------------------------------------
+
+Activating thorn Cactus...Success -> active implementation Cactus
+Activation requested for 
+--->ADMBaseX CanudaX_BSSNMoL CanudaX_ExactID CarpetX IOUtil ODESolvers TmunuBaseX<---
+Thorn ADMBaseX requests automatic activation of Loop
+Thorn CarpetX requests automatic activation of AMReX
+Thorn CarpetX requests automatic activation of MPI
+Thorn CarpetX requests automatic activation of yaml_cpp
+Thorn CarpetX requests automatic activation of zlib
+Thorn CarpetX requests automatic activation of Arith
+Thorn CarpetX requests automatic activation of CarpetXRegrid
+Thorn CarpetX requests automatic activation of ADIOS2
+Thorn CarpetX requests automatic activation of openPMD
+Thorn CarpetX requests automatic activation of Silo
+Thorn Arith requests automatic activation of NSIMD
+Thorn MPI requests automatic activation of hwloc
+Thorn openPMD requests automatic activation of HDF5
+Activating thorn ADIOS2...Success -> active implementation ADIOS2
+Activating thorn ADMBaseX...Success -> active implementation ADMBaseX
+Activating thorn AMReX...Success -> active implementation AMReX
+Activating thorn Arith...Success -> active implementation Arith
+Activating thorn CanudaX_BSSNMoL...Success -> active implementation CanudaX_BSSNMoL
+Activating thorn CanudaX_ExactID...Success -> active implementation CanudaX_ExactID
+Activating thorn CarpetX...Success -> active implementation Driver
+Activating thorn CarpetXRegrid...Success -> active implementation CarpetXRegrid
+Activating thorn HDF5...Success -> active implementation HDF5
+Activating thorn hwloc...Success -> active implementation hwloc
+Activating thorn IOUtil...Success -> active implementation IO
+Activating thorn Loop...Success -> active implementation Loop
+Activating thorn MPI...Success -> active implementation MPI
+Activating thorn NSIMD...Success -> active implementation NSIMD
+Activating thorn ODESolvers...Success -> active implementation ODESolvers
+Activating thorn openPMD...Success -> active implementation openPMD
+Activating thorn Silo...Success -> active implementation Silo
+Activating thorn TmunuBaseX...Success -> active implementation TmunuBaseX
+Activating thorn yaml_cpp...Success -> active implementation yaml_cpp
+Activating thorn zlib...Success -> active implementation zlib
+--------------------------------------------------------------------------------
+  if (recover initial data)
+    Recover parameters
+  endif
+
+  Startup routines
+    [CCTK_STARTUP]
+      CarpetX::Driver_Startup: Start up the driver
+      IOUtil::IOUtil_Startup: Startup routine
+      GROUP hwloc_startup: hwloc startup group
+        hwloc::hwloc_version: Output hwloc version
+
+  Startup routines which need an existing grid hierarchy
+    [CCTK_WRAGH]
+      Arith::Test_smallvector: [meta] Test small vectors
+      Arith::Test_spvect: [meta] Test sparse vectors
+      ODESolvers::ODESolvers_InitConstants: [global] Set up dummy loop counters for schedule printout
+  Parameter checking routines
+    [CCTK_PARAMCHECK]
+      CanudaX_BSSNMoL::CanudaX_BSSNMoL_paramcheck: Check CanudaX_BSSNMoL parameters for consistency
+
+  Initialisation
+    if (NOT (recover initial data AND recovery_mode is 'strict'))
+      [CCTK_PREREGRIDINITIAL]
+      Set up grid hierarchy
+      [CCTK_POSTREGRIDINITIAL]
+      [CCTK_BASEGRID]
+        CarpetXRegrid::CarpetXRegrid_InitError: Initialize regridding error to zero
+        GROUP ODESolvers_BaseGrid: Set up constants (e.g. coordinates) everywhere on the grid
+      [CCTK_INITIAL]
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP ODESolvers_Initial: Set up initial conditions on interior of state vector
+          GROUP ADMBaseX_InitialData: Schedule group for calculating ADM initial data
+            GROUP CanudaX_ExactIDGroup: CanudaX_ExactID group for setting up initial data
+              CanudaX_ExactID::CanudaX_ExactID_GaugeWave: [local] Create gauge wave initial data
+          GROUP ADMBaseX_InitialGauge: Schedule group for the ADM initial gauge condition
+            ADMBaseX::ADMBaseX_initial_dtlapse: Set dtlapse to zero
+            ADMBaseX::ADMBaseX_initial_dtshift: Set dtshift to zero
+          GROUP ADMBaseX_PostInitial: Schedule group for modifying the ADM initial data, such as e.g. adding noise
+        GROUP CanudaX_BSSNMoL_InitialGroup: CanudaX_BSSNMoL: initial bin
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_adm2bssn: [local] Convert initial data into BSSN variables
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_gammat: [local] Set Gammat initial data
+      [CCTK_POSTINITIAL]
+        GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+          GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+          GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+          GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+          GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+            TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+            GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+      Initialise finer grids recursively
+      Restrict from finer grids
+      [CCTK_POSTRESTRICTINITIAL]
+      [CCTK_POSTPOSTINITIAL]
+      [CCTK_POSTSTEP]
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+    endif
+    if (recover initial data)
+      [CCTK_BASEGRID]
+        CarpetXRegrid::CarpetXRegrid_InitError: Initialize regridding error to zero
+        GROUP ODESolvers_BaseGrid: Set up constants (e.g. coordinates) everywhere on the grid
+      [CCTK_RECOVER_VARIABLES]
+      [CCTK_POST_RECOVER_VARIABLES]
+        GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+          GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+            CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+          GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+          GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+          GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+            TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+            GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+        GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+    endif
+    if (checkpoint initial data)
+      [CCTK_CPINITIAL]
+        CarpetX::CarpetX_CheckpointInitial: [meta] Checkpoint initial conditions
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+        CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn_constraints: Compute constraints
+        GROUP ODESolvers_Analysis: Calculate analysis quantities everywhere
+  endif
+  Output grid variables
+
+  do loop over timesteps
+    [CCTK_PREREGRID]
+    Change grid hierarchy
+    [CCTK_POSTREGRID]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+    Rotate timelevels
+    iteration = iteration+1
+    t = t+dt
+    [CCTK_PRESTEP]
+    [CCTK_EVOL]
+      ODESolvers::ODESolvers_Solve: [level] Solve ODEs
+      while (ODESolvers::do_substeps)
+        GROUP ODESolvers_CalledBySolve: Groups internally scheduled by ODESolvers_Solve
+          GROUP ODESolvers_RHS: Evaluate the RHS for of state vector everywhere on the grid
+            GROUP CanudaX_BSSNMoL_RHSGroup: CanudaX_BSSNMoL: calculate BSSN RHS
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_calc_bssn_rhs: MoL RHS calculation
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_apply_boundary_conditions: Apply radiative boundary conditions 
+          GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+            GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+              CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+            GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+            GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+            GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+              TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+              GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+      end while
+    Evolve finer grids recursively
+    Restrict from finer grids
+    [CCTK_POSTRESTRICT]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+    [CCTK_POSTSTEP]
+      GROUP ODESolvers_EstimateError: Estimate discretization error (for regridding)
+    if (checkpoint)
+      [CCTK_CHECKPOINT]
+      CarpetX::CarpetX_Checkpoint: [meta] Checkpoint
+    endif
+    if (analysis)
+      [CCTK_ANALYSIS]
+      CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn_constraints: Compute constraints
+      GROUP ODESolvers_Analysis: Calculate analysis quantities everywhere
+    endif
+    Output grid variables
+    enddo
+
+  Termination routines
+    [CCTK_TERMINATE]
+      CarpetX::CarpetX_CheckpointTerminate: [meta] Checkpoint before terminating
+
+  Shutdown routines
+    [CCTK_SHUTDOWN]
+      CarpetX::Driver_Shutdown: [meta] Shut down the driver
+
+  Routines run after changing the grid hierarchy:
+    [CCTK_POSTREGRID]
+      GROUP ODESolvers_PostStep: Apply boundary conditions to state vector, and project if necessary
+        GROUP CanudaX_BSSNMoL_PostStepGroup: CanudaX_BSSNMoL: post-step operations
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_impose_conf_fac_floor: Make sure conformal factor does not drop below specified value
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_reset_detmetric: reset dethh = 1
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_remove_trA: Remove trace of A
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_sync: [global] Sync state vector
+          CanudaX_BSSNMoL::CanudaX_BSSNMoL_bssn2adm: [local] Convert variables back to the ADM ones
+        GROUP ADMBaseX_SetADMRHS: Set ADM RHS variables in this group
+        GROUP ADMBaseX_SetADMVars: Set ADM variables in this group
+        GROUP TmunuBaseX_SetTmunuVars: Schedule group for setting T_munu
+          TmunuBaseX::TmunuBaseX_ZeroTmunu: Set T_munu to zero
+          GROUP TmunuBaseX_AddToTmunu: Add to T_munu here
+--------------------------------------------------------------------------------
+INFO (hwloc): library version 2.10.0, API version 0x20800
+--------------------------------------------------------------------------------
+
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m──██──[32m██████[34m──██──[34m──██──[32m██████[34m──██──[34m──██──[32m██████[34m──██──[39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[31m██████[31m██████[31m██████[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m──██──[32m██████[34m──██──[31m██████[31m██████[31m██████[34m──██──[32m██████[34m──██──[39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[31m██████[31m██████[31m██████[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [31m██████[31m██████[31m██████[34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m──██──[32m██████[34m──██──[34m──██──[32m██████[34m──██──[34m──██──[32m██████[34m──██──[39m  
+  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [34m  ▕▏  [32m██████[34m  ▕▏  [39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+  [34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[34m──██──[39m  
+  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [34m  ▕▏  [39m  
+
+AMR driver provided by CarpetX,
+using AMReX 25.11 (MPI, OpenMP, no accelerators, optimized)
+--------------------------------------------------------------------------------
+
+Initializing AMReX (25.11)...
+MPI initialized with 2 MPI processes
+MPI initialized with thread support level 2
+OMP initialized with 1 OMP threads
+AMReX (25.11) initialized
+INFO (CarpetX): 
+Symmetries:
+  lower x: periodic
+  lower y: periodic
+  lower z: periodic
+  upper x: periodic
+  upper y: periodic
+  upper z: periodic
+Default boundaries:
+  lower x: symmetry_boundary
+  lower y: symmetry_boundary
+  lower z: symmetry_boundary
+  upper x: symmetry_boundary
+  upper y: symmetry_boundary
+  upper z: symmetry_boundary
+INFO (Arith): Test_smallvector
+INFO (Arith): Test_spvect
+INFO (CarpetX): Setting initial values for max_grid_size values for all levels
+INFO (CarpetX): Setting up initial conditions...
+INFO (CarpetX): Iteration: 0   time: 0   delta_time: 0.00390625
+INFO (CarpetX): Patch 0:
+INFO (CarpetX):   Grid extent:
+INFO (CarpetX):     gsh=[71,15,15]
+INFO (CarpetX):     blocking_factor=[8,8,8]
+INFO (CarpetX):     max_grid_size=[10000000,10000000,10000000]
+INFO (CarpetX):     max_tile_size=[1024000,16,32]
+INFO (CarpetX):   Domain extent:
+INFO (CarpetX):     xmin=[-0.5,-0.0625,-0.0625]
+INFO (CarpetX):     xmax=[0.5,0.0625,0.0625]
+INFO (CarpetX):     base dx=[0.015625,0.015625,0.015625]
+INFO (CarpetX): Initializing level 0...
+INFO (CanudaX_ExactID): Begin Gauge Wave initial data
+INFO (CanudaX_ExactID): === End gauge wave initial data ===
+INFO (CarpetX): Regridding...
+INFO (CarpetX):   level 0: 2 boxes, 4096 cells (100%)
+INFO (CarpetX): Initialized 1 levels
+INFO (CarpetX): OutputGH: iteration 0, time 0.000000, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Starting evolution...
+INFO (ODESolvers): ODE integrator is RK4
+INFO (CarpetX): OutputGH: iteration 1, time 0.003906, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.00390625   Iterations per second: 38.6472   Simulation time per second: 0.150966
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 158299
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.0258751 sec
+INFO (CarpetX):   total evolution compute time:    0.025857 sec
+INFO (CarpetX):   total evolution output time:     1.81198e-05 sec
+INFO (CarpetX):   total iterations:                1
+INFO (CarpetX):   total cells updated:             4096
+INFO (CarpetX):   average iterations per second: 38.6472
+INFO (CarpetX):   average cell updates per second: 158299
+INFO (CarpetX): OutputGH: iteration 2, time 0.007812, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0078125   Iterations per second: 40.2567   Simulation time per second: 0.157253
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 164891
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.0496812 sec
+INFO (CarpetX):   total evolution compute time:    0.0496452 sec
+INFO (CarpetX):   total evolution output time:     3.60012e-05 sec
+INFO (CarpetX):   total iterations:                2
+INFO (CarpetX):   total cells updated:             8192
+INFO (CarpetX):   average iterations per second: 40.2567
+INFO (CarpetX):   average cell updates per second: 164891
+INFO (CarpetX): OutputGH: iteration 3, time 0.011719, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0117188   Iterations per second: 40.8948   Simulation time per second: 0.159745
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 167505
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.073359 sec
+INFO (CarpetX):   total evolution compute time:    0.0732939 sec
+INFO (CarpetX):   total evolution output time:     6.50883e-05 sec
+INFO (CarpetX):   total iterations:                3
+INFO (CarpetX):   total cells updated:             12288
+INFO (CarpetX):   average iterations per second: 40.8948
+INFO (CarpetX):   average cell updates per second: 167505
+INFO (CarpetX): OutputGH: iteration 4, time 0.015625, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.015625   Iterations per second: 41.2537   Simulation time per second: 0.161147
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 168975
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.096961 sec
+INFO (CarpetX):   total evolution compute time:    0.09688 sec
+INFO (CarpetX):   total evolution output time:     8.10623e-05 sec
+INFO (CarpetX):   total iterations:                4
+INFO (CarpetX):   total cells updated:             16384
+INFO (CarpetX):   average iterations per second: 41.2537
+INFO (CarpetX):   average cell updates per second: 168975
+INFO (CarpetX): OutputGH: iteration 5, time 0.019531, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0195312   Iterations per second: 41.4666   Simulation time per second: 0.161979
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 169847
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.120579 sec
+INFO (CarpetX):   total evolution compute time:    0.120483 sec
+INFO (CarpetX):   total evolution output time:     9.60827e-05 sec
+INFO (CarpetX):   total iterations:                5
+INFO (CarpetX):   total cells updated:             20480
+INFO (CarpetX):   average iterations per second: 41.4666
+INFO (CarpetX):   average cell updates per second: 169847
+INFO (CarpetX): OutputGH: iteration 6, time 0.023438, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0234375   Iterations per second: 41.612   Simulation time per second: 0.162547
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 170443
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.144189 sec
+INFO (CarpetX):   total evolution compute time:    0.144079 sec
+INFO (CarpetX):   total evolution output time:     0.000110149 sec
+INFO (CarpetX):   total iterations:                6
+INFO (CarpetX):   total cells updated:             24576
+INFO (CarpetX):   average iterations per second: 41.612
+INFO (CarpetX):   average cell updates per second: 170443
+INFO (CarpetX): OutputGH: iteration 7, time 0.027344, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0273438   Iterations per second: 41.6927   Simulation time per second: 0.162862
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 170773
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.167895 sec
+INFO (CarpetX):   total evolution compute time:    0.16777 sec
+INFO (CarpetX):   total evolution output time:     0.00012517 sec
+INFO (CarpetX):   total iterations:                7
+INFO (CarpetX):   total cells updated:             28672
+INFO (CarpetX):   average iterations per second: 41.6927
+INFO (CarpetX):   average cell updates per second: 170773
+INFO (CarpetX): OutputGH: iteration 8, time 0.031250, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.03125   Iterations per second: 41.7125   Simulation time per second: 0.162939
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 170854
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.191789 sec
+INFO (CarpetX):   total evolution compute time:    0.191649 sec
+INFO (CarpetX):   total evolution output time:     0.00014019 sec
+INFO (CarpetX):   total iterations:                8
+INFO (CarpetX):   total cells updated:             32768
+INFO (CarpetX):   average iterations per second: 41.7125
+INFO (CarpetX):   average cell updates per second: 170854
+INFO (CarpetX): OutputGH: iteration 9, time 0.035156, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0351562   Iterations per second: 41.7953   Simulation time per second: 0.163263
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 171194
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.215335 sec
+INFO (CarpetX):   total evolution compute time:    0.21518 sec
+INFO (CarpetX):   total evolution output time:     0.00015521 sec
+INFO (CarpetX):   total iterations:                9
+INFO (CarpetX):   total cells updated:             36864
+INFO (CarpetX):   average iterations per second: 41.7953
+INFO (CarpetX):   average cell updates per second: 171194
+INFO (CarpetX): OutputGH: iteration 10, time 0.039062, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0390625   Iterations per second: 41.8501   Simulation time per second: 0.163477
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 171418
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.238948 sec
+INFO (CarpetX):   total evolution compute time:    0.238779 sec
+INFO (CarpetX):   total evolution output time:     0.000169277 sec
+INFO (CarpetX):   total iterations:                10
+INFO (CarpetX):   total cells updated:             40960
+INFO (CarpetX):   average iterations per second: 41.8501
+INFO (CarpetX):   average cell updates per second: 171418
+INFO (CarpetX): OutputGH: iteration 11, time 0.042969, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0429688   Iterations per second: 41.8949   Simulation time per second: 0.163652
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 171602
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.262587 sec
+INFO (CarpetX):   total evolution compute time:    0.262403 sec
+INFO (CarpetX):   total evolution output time:     0.000184298 sec
+INFO (CarpetX):   total iterations:                11
+INFO (CarpetX):   total cells updated:             45056
+INFO (CarpetX):   average iterations per second: 41.8909
+INFO (CarpetX):   average cell updates per second: 171585
+INFO (CarpetX): OutputGH: iteration 12, time 0.046875, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.046875   Iterations per second: 41.9188   Simulation time per second: 0.163746
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 171700
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.28632 sec
+INFO (CarpetX):   total evolution compute time:    0.286121 sec
+INFO (CarpetX):   total evolution output time:     0.000199318 sec
+INFO (CarpetX):   total iterations:                12
+INFO (CarpetX):   total cells updated:             49152
+INFO (CarpetX):   average iterations per second: 41.9111
+INFO (CarpetX):   average cell updates per second: 171668
+INFO (CarpetX): OutputGH: iteration 13, time 0.050781, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0507812   Iterations per second: 41.9661   Simulation time per second: 0.16393
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 171893
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.309907 sec
+INFO (CarpetX):   total evolution compute time:    0.309694 sec
+INFO (CarpetX):   total evolution output time:     0.000213385 sec
+INFO (CarpetX):   total iterations:                13
+INFO (CarpetX):   total cells updated:             53248
+INFO (CarpetX):   average iterations per second: 41.948
+INFO (CarpetX):   average cell updates per second: 171819
+INFO (CarpetX): OutputGH: iteration 14, time 0.054688, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0546875   Iterations per second: 42.0159   Simulation time per second: 0.164125
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172097
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.333453 sec
+INFO (CarpetX):   total evolution compute time:    0.333225 sec
+INFO (CarpetX):   total evolution output time:     0.000228405 sec
+INFO (CarpetX):   total iterations:                14
+INFO (CarpetX):   total cells updated:             57344
+INFO (CarpetX):   average iterations per second: 41.9849
+INFO (CarpetX):   average cell updates per second: 171970
+INFO (CarpetX): OutputGH: iteration 15, time 0.058594, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0585938   Iterations per second: 42.0503   Simulation time per second: 0.164259
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172238
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.357059 sec
+INFO (CarpetX):   total evolution compute time:    0.356817 sec
+INFO (CarpetX):   total evolution output time:     0.000242233 sec
+INFO (CarpetX):   total iterations:                15
+INFO (CarpetX):   total cells updated:             61440
+INFO (CarpetX):   average iterations per second: 42.0098
+INFO (CarpetX):   average cell updates per second: 172072
+INFO (CarpetX): OutputGH: iteration 16, time 0.062500, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0625   Iterations per second: 42.0809   Simulation time per second: 0.164379
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172363
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.380667 sec
+INFO (CarpetX):   total evolution compute time:    0.380411 sec
+INFO (CarpetX):   total evolution output time:     0.0002563 sec
+INFO (CarpetX):   total iterations:                16
+INFO (CarpetX):   total cells updated:             65536
+INFO (CarpetX):   average iterations per second: 42.0314
+INFO (CarpetX):   average cell updates per second: 172161
+INFO (CarpetX): OutputGH: iteration 17, time 0.066406, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0664062   Iterations per second: 42.117   Simulation time per second: 0.16452
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172511
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.404227 sec
+INFO (CarpetX):   total evolution compute time:    0.403957 sec
+INFO (CarpetX):   total evolution output time:     0.000270367 sec
+INFO (CarpetX):   total iterations:                17
+INFO (CarpetX):   total cells updated:             69632
+INFO (CarpetX):   average iterations per second: 42.0555
+INFO (CarpetX):   average cell updates per second: 172259
+INFO (CarpetX): OutputGH: iteration 18, time 0.070312, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0703125   Iterations per second: 42.1457   Simulation time per second: 0.164631
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172629
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.427809 sec
+INFO (CarpetX):   total evolution compute time:    0.427522 sec
+INFO (CarpetX):   total evolution output time:     0.000287294 sec
+INFO (CarpetX):   total iterations:                18
+INFO (CarpetX):   total cells updated:             73728
+INFO (CarpetX):   average iterations per second: 42.0748
+INFO (CarpetX):   average cell updates per second: 172338
+INFO (CarpetX): OutputGH: iteration 19, time 0.074219, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0742188   Iterations per second: 42.1603   Simulation time per second: 0.164689
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172689
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.451454 sec
+INFO (CarpetX):   total evolution compute time:    0.45115 sec
+INFO (CarpetX):   total evolution output time:     0.000304461 sec
+INFO (CarpetX):   total iterations:                19
+INFO (CarpetX):   total cells updated:             77824
+INFO (CarpetX):   average iterations per second: 42.0862
+INFO (CarpetX):   average cell updates per second: 172385
+INFO (CarpetX): OutputGH: iteration 20, time 0.078125, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.078125   Iterations per second: 42.177   Simulation time per second: 0.164754
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172757
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.475079 sec
+INFO (CarpetX):   total evolution compute time:    0.474758 sec
+INFO (CarpetX):   total evolution output time:     0.000321388 sec
+INFO (CarpetX):   total iterations:                20
+INFO (CarpetX):   total cells updated:             81920
+INFO (CarpetX):   average iterations per second: 42.0982
+INFO (CarpetX):   average cell updates per second: 172434
+INFO (CarpetX): OutputGH: iteration 21, time 0.082031, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0820312   Iterations per second: 42.1928   Simulation time per second: 0.164816
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172822
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.4987 sec
+INFO (CarpetX):   total evolution compute time:    0.498362 sec
+INFO (CarpetX):   total evolution output time:     0.000338554 sec
+INFO (CarpetX):   total iterations:                21
+INFO (CarpetX):   total cells updated:             86016
+INFO (CarpetX):   average iterations per second: 42.1095
+INFO (CarpetX):   average cell updates per second: 172480
+INFO (CarpetX): OutputGH: iteration 22, time 0.085938, run time 0 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0859375   Iterations per second: 42.2127   Simulation time per second: 0.164893
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172903
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.522289 sec
+INFO (CarpetX):   total evolution compute time:    0.521933 sec
+INFO (CarpetX):   total evolution output time:     0.000356436 sec
+INFO (CarpetX):   total iterations:                22
+INFO (CarpetX):   total cells updated:             90112
+INFO (CarpetX):   average iterations per second: 42.1223
+INFO (CarpetX):   average cell updates per second: 172533
+INFO (CarpetX): OutputGH: iteration 23, time 0.089844, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0898438   Iterations per second: 42.216   Simulation time per second: 0.164906
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172917
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.54596 sec
+INFO (CarpetX):   total evolution compute time:    0.545586 sec
+INFO (CarpetX):   total evolution output time:     0.000374317 sec
+INFO (CarpetX):   total iterations:                23
+INFO (CarpetX):   total cells updated:             94208
+INFO (CarpetX):   average iterations per second: 42.1276
+INFO (CarpetX):   average cell updates per second: 172555
+INFO (CarpetX): OutputGH: iteration 24, time 0.093750, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.09375   Iterations per second: 42.2192   Simulation time per second: 0.164919
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172930
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.56963 sec
+INFO (CarpetX):   total evolution compute time:    0.569239 sec
+INFO (CarpetX):   total evolution output time:     0.000391483 sec
+INFO (CarpetX):   total iterations:                24
+INFO (CarpetX):   total cells updated:             98304
+INFO (CarpetX):   average iterations per second: 42.1326
+INFO (CarpetX):   average cell updates per second: 172575
+INFO (CarpetX): OutputGH: iteration 25, time 0.097656, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.0976562   Iterations per second: 42.2216   Simulation time per second: 0.164928
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172940
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.593302 sec
+INFO (CarpetX):   total evolution compute time:    0.592893 sec
+INFO (CarpetX):   total evolution output time:     0.000409603 sec
+INFO (CarpetX):   total iterations:                25
+INFO (CarpetX):   total cells updated:             102400
+INFO (CarpetX):   average iterations per second: 42.137
+INFO (CarpetX):   average cell updates per second: 172593
+INFO (CarpetX): OutputGH: iteration 26, time 0.101562, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.101562   Iterations per second: 42.2203   Simulation time per second: 0.164923
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172934
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.616994 sec
+INFO (CarpetX):   total evolution compute time:    0.616568 sec
+INFO (CarpetX):   total evolution output time:     0.000426531 sec
+INFO (CarpetX):   total iterations:                26
+INFO (CarpetX):   total cells updated:             106496
+INFO (CarpetX):   average iterations per second: 42.1398
+INFO (CarpetX):   average cell updates per second: 172605
+INFO (CarpetX): OutputGH: iteration 27, time 0.105469, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.105469   Iterations per second: 42.2366   Simulation time per second: 0.164987
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173001
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.640588 sec
+INFO (CarpetX):   total evolution compute time:    0.640145 sec
+INFO (CarpetX):   total evolution output time:     0.000443459 sec
+INFO (CarpetX):   total iterations:                27
+INFO (CarpetX):   total cells updated:             110592
+INFO (CarpetX):   average iterations per second: 42.1488
+INFO (CarpetX):   average cell updates per second: 172641
+INFO (CarpetX): OutputGH: iteration 28, time 0.109375, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.109375   Iterations per second: 42.2338   Simulation time per second: 0.164976
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172990
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.66428 sec
+INFO (CarpetX):   total evolution compute time:    0.663821 sec
+INFO (CarpetX):   total evolution output time:     0.000459433 sec
+INFO (CarpetX):   total iterations:                28
+INFO (CarpetX):   total cells updated:             114688
+INFO (CarpetX):   average iterations per second: 42.1509
+INFO (CarpetX):   average cell updates per second: 172650
+INFO (CarpetX): OutputGH: iteration 29, time 0.113281, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.113281   Iterations per second: 42.2509   Simulation time per second: 0.165043
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173060
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.687862 sec
+INFO (CarpetX):   total evolution compute time:    0.687386 sec
+INFO (CarpetX):   total evolution output time:     0.00047636 sec
+INFO (CarpetX):   total iterations:                29
+INFO (CarpetX):   total cells updated:             118784
+INFO (CarpetX):   average iterations per second: 42.1596
+INFO (CarpetX):   average cell updates per second: 172686
+INFO (CarpetX): OutputGH: iteration 30, time 0.117188, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.117188   Iterations per second: 42.2754   Simulation time per second: 0.165138
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173160
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.711393 sec
+INFO (CarpetX):   total evolution compute time:    0.710899 sec
+INFO (CarpetX):   total evolution output time:     0.000493526 sec
+INFO (CarpetX):   total iterations:                30
+INFO (CarpetX):   total cells updated:             122880
+INFO (CarpetX):   average iterations per second: 42.1708
+INFO (CarpetX):   average cell updates per second: 172732
+INFO (CarpetX): OutputGH: iteration 31, time 0.121094, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.121094   Iterations per second: 42.2969   Simulation time per second: 0.165222
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173248
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.734927 sec
+INFO (CarpetX):   total evolution compute time:    0.734416 sec
+INFO (CarpetX):   total evolution output time:     0.000510454 sec
+INFO (CarpetX):   total iterations:                31
+INFO (CarpetX):   total cells updated:             126976
+INFO (CarpetX):   average iterations per second: 42.1811
+INFO (CarpetX):   average cell updates per second: 172774
+INFO (CarpetX): OutputGH: iteration 32, time 0.125000, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.125   Iterations per second: 42.3043   Simulation time per second: 0.165251
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173278
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.758528 sec
+INFO (CarpetX):   total evolution compute time:    0.758 sec
+INFO (CarpetX):   total evolution output time:     0.000528336 sec
+INFO (CarpetX):   total iterations:                32
+INFO (CarpetX):   total cells updated:             131072
+INFO (CarpetX):   average iterations per second: 42.187
+INFO (CarpetX):   average cell updates per second: 172798
+INFO (CarpetX): OutputGH: iteration 33, time 0.128906, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.128906   Iterations per second: 42.3069   Simulation time per second: 0.165261
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173289
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.782152 sec
+INFO (CarpetX):   total evolution compute time:    0.781606 sec
+INFO (CarpetX):   total evolution output time:     0.000546217 sec
+INFO (CarpetX):   total iterations:                33
+INFO (CarpetX):   total cells updated:             135168
+INFO (CarpetX):   average iterations per second: 42.1913
+INFO (CarpetX):   average cell updates per second: 172816
+INFO (CarpetX): OutputGH: iteration 34, time 0.132812, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.132812   Iterations per second: 42.3217   Simulation time per second: 0.165319
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173350
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.805706 sec
+INFO (CarpetX):   total evolution compute time:    0.805143 sec
+INFO (CarpetX):   total evolution output time:     0.000563145 sec
+INFO (CarpetX):   total iterations:                34
+INFO (CarpetX):   total cells updated:             139264
+INFO (CarpetX):   average iterations per second: 42.199
+INFO (CarpetX):   average cell updates per second: 172847
+INFO (CarpetX): OutputGH: iteration 35, time 0.136719, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.136719   Iterations per second: 42.3336   Simulation time per second: 0.165366
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173398
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.829268 sec
+INFO (CarpetX):   total evolution compute time:    0.828687 sec
+INFO (CarpetX):   total evolution output time:     0.000581264 sec
+INFO (CarpetX):   total iterations:                35
+INFO (CarpetX):   total cells updated:             143360
+INFO (CarpetX):   average iterations per second: 42.2059
+INFO (CarpetX):   average cell updates per second: 172875
+INFO (CarpetX): OutputGH: iteration 36, time 0.140625, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.140625   Iterations per second: 42.3382   Simulation time per second: 0.165384
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173417
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.852864 sec
+INFO (CarpetX):   total evolution compute time:    0.852266 sec
+INFO (CarpetX):   total evolution output time:     0.000598192 sec
+INFO (CarpetX):   total iterations:                36
+INFO (CarpetX):   total cells updated:             147456
+INFO (CarpetX):   average iterations per second: 42.2107
+INFO (CarpetX):   average cell updates per second: 172895
+INFO (CarpetX): OutputGH: iteration 37, time 0.144531, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.144531   Iterations per second: 42.3021   Simulation time per second: 0.165242
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173269
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.876685 sec
+INFO (CarpetX):   total evolution compute time:    0.87607 sec
+INFO (CarpetX):   total evolution output time:     0.00061512 sec
+INFO (CarpetX):   total iterations:                37
+INFO (CarpetX):   total cells updated:             151552
+INFO (CarpetX):   average iterations per second: 42.2044
+INFO (CarpetX):   average cell updates per second: 172869
+INFO (CarpetX): OutputGH: iteration 38, time 0.148438, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.148438   Iterations per second: 42.2673   Simulation time per second: 0.165107
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173127
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.900519 sec
+INFO (CarpetX):   total evolution compute time:    0.899887 sec
+INFO (CarpetX):   total evolution output time:     0.000632048 sec
+INFO (CarpetX):   total iterations:                38
+INFO (CarpetX):   total cells updated:             155648
+INFO (CarpetX):   average iterations per second: 42.1979
+INFO (CarpetX):   average cell updates per second: 172842
+INFO (CarpetX): OutputGH: iteration 39, time 0.152344, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.152344   Iterations per second: 42.2383   Simulation time per second: 0.164994
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173008
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.92434 sec
+INFO (CarpetX):   total evolution compute time:    0.923692 sec
+INFO (CarpetX):   total evolution output time:     0.000648975 sec
+INFO (CarpetX):   total iterations:                39
+INFO (CarpetX):   total cells updated:             159744
+INFO (CarpetX):   average iterations per second: 42.1922
+INFO (CarpetX):   average cell updates per second: 172819
+INFO (CarpetX): OutputGH: iteration 40, time 0.156250, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.15625   Iterations per second: 42.2357   Simulation time per second: 0.164983
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 172997
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.94803 sec
+INFO (CarpetX):   total evolution compute time:    0.947367 sec
+INFO (CarpetX):   total evolution output time:     0.000663042 sec
+INFO (CarpetX):   total iterations:                40
+INFO (CarpetX):   total cells updated:             163840
+INFO (CarpetX):   average iterations per second: 42.1927
+INFO (CarpetX):   average cell updates per second: 172821
+INFO (CarpetX): OutputGH: iteration 41, time 0.160156, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.160156   Iterations per second: 42.2422   Simulation time per second: 0.165009
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173024
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.971671 sec
+INFO (CarpetX):   total evolution compute time:    0.970993 sec
+INFO (CarpetX):   total evolution output time:     0.000678062 sec
+INFO (CarpetX):   total iterations:                41
+INFO (CarpetX):   total cells updated:             167936
+INFO (CarpetX):   average iterations per second: 42.1954
+INFO (CarpetX):   average cell updates per second: 172832
+INFO (CarpetX): OutputGH: iteration 42, time 0.164062, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.164062   Iterations per second: 42.249   Simulation time per second: 0.165035
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173052
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            0.995306 sec
+INFO (CarpetX):   total evolution compute time:    0.994611 sec
+INFO (CarpetX):   total evolution output time:     0.00069499 sec
+INFO (CarpetX):   total iterations:                42
+INFO (CarpetX):   total cells updated:             172032
+INFO (CarpetX):   average iterations per second: 42.1981
+INFO (CarpetX):   average cell updates per second: 172843
+INFO (CarpetX): OutputGH: iteration 43, time 0.167969, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.167969   Iterations per second: 42.2577   Simulation time per second: 0.165069
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173088
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.01893 sec
+INFO (CarpetX):   total evolution compute time:    1.01822 sec
+INFO (CarpetX):   total evolution output time:     0.000709057 sec
+INFO (CarpetX):   total iterations:                43
+INFO (CarpetX):   total cells updated:             176128
+INFO (CarpetX):   average iterations per second: 42.2013
+INFO (CarpetX):   average cell updates per second: 172857
+INFO (CarpetX): OutputGH: iteration 44, time 0.171875, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.171875   Iterations per second: 42.2574   Simulation time per second: 0.165068
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173087
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.04259 sec
+INFO (CarpetX):   total evolution compute time:    1.04187 sec
+INFO (CarpetX):   total evolution output time:     0.000725031 sec
+INFO (CarpetX):   total iterations:                44
+INFO (CarpetX):   total cells updated:             180224
+INFO (CarpetX):   average iterations per second: 42.2025
+INFO (CarpetX):   average cell updates per second: 172862
+INFO (CarpetX): OutputGH: iteration 45, time 0.175781, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.175781   Iterations per second: 42.2659   Simulation time per second: 0.165101
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173121
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.06621 sec
+INFO (CarpetX):   total evolution compute time:    1.06547 sec
+INFO (CarpetX):   total evolution output time:     0.000742197 sec
+INFO (CarpetX):   total iterations:                45
+INFO (CarpetX):   total cells updated:             184320
+INFO (CarpetX):   average iterations per second: 42.2056
+INFO (CarpetX):   average cell updates per second: 172874
+INFO (CarpetX): OutputGH: iteration 46, time 0.179688, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.179688   Iterations per second: 42.2734   Simulation time per second: 0.16513
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173152
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.08983 sec
+INFO (CarpetX):   total evolution compute time:    1.08907 sec
+INFO (CarpetX):   total evolution output time:     0.000756264 sec
+INFO (CarpetX):   total iterations:                46
+INFO (CarpetX):   total cells updated:             188416
+INFO (CarpetX):   average iterations per second: 42.2085
+INFO (CarpetX):   average cell updates per second: 172886
+INFO (CarpetX): OutputGH: iteration 47, time 0.183594, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.183594   Iterations per second: 42.2855   Simulation time per second: 0.165178
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173201
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.11341 sec
+INFO (CarpetX):   total evolution compute time:    1.11264 sec
+INFO (CarpetX):   total evolution output time:     0.000770092 sec
+INFO (CarpetX):   total iterations:                47
+INFO (CarpetX):   total cells updated:             192512
+INFO (CarpetX):   average iterations per second: 42.2125
+INFO (CarpetX):   average cell updates per second: 172902
+INFO (CarpetX): OutputGH: iteration 48, time 0.187500, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.1875   Iterations per second: 42.3013   Simulation time per second: 0.16524
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173266
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.13697 sec
+INFO (CarpetX):   total evolution compute time:    1.13619 sec
+INFO (CarpetX):   total evolution output time:     0.00078702 sec
+INFO (CarpetX):   total iterations:                48
+INFO (CarpetX):   total cells updated:             196608
+INFO (CarpetX):   average iterations per second: 42.2173
+INFO (CarpetX):   average cell updates per second: 172922
+INFO (CarpetX): OutputGH: iteration 49, time 0.191406, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.191406   Iterations per second: 42.2917   Simulation time per second: 0.165202
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173227
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.16067 sec
+INFO (CarpetX):   total evolution compute time:    1.15987 sec
+INFO (CarpetX):   total evolution output time:     0.00080204 sec
+INFO (CarpetX):   total iterations:                49
+INFO (CarpetX):   total cells updated:             200704
+INFO (CarpetX):   average iterations per second: 42.217
+INFO (CarpetX):   average cell updates per second: 172921
+INFO (CarpetX): OutputGH: iteration 50, time 0.195312, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.195312   Iterations per second: 42.2503   Simulation time per second: 0.16504
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173057
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.18455 sec
+INFO (CarpetX):   total evolution compute time:    1.18373 sec
+INFO (CarpetX):   total evolution output time:     0.00081706 sec
+INFO (CarpetX):   total iterations:                50
+INFO (CarpetX):   total cells updated:             204800
+INFO (CarpetX):   average iterations per second: 42.2103
+INFO (CarpetX):   average cell updates per second: 172893
+INFO (CarpetX): OutputGH: iteration 51, time 0.199219, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.199219   Iterations per second: 42.2568   Simulation time per second: 0.165066
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173084
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.20818 sec
+INFO (CarpetX):   total evolution compute time:    1.20735 sec
+INFO (CarpetX):   total evolution output time:     0.000831127 sec
+INFO (CarpetX):   total iterations:                51
+INFO (CarpetX):   total cells updated:             208896
+INFO (CarpetX):   average iterations per second: 42.2123
+INFO (CarpetX):   average cell updates per second: 172902
+INFO (CarpetX): OutputGH: iteration 52, time 0.203125, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.203125   Iterations per second: 42.2709   Simulation time per second: 0.165121
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173141
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.23176 sec
+INFO (CarpetX):   total evolution compute time:    1.23092 sec
+INFO (CarpetX):   total evolution output time:     0.000845194 sec
+INFO (CarpetX):   total iterations:                52
+INFO (CarpetX):   total cells updated:             212992
+INFO (CarpetX):   average iterations per second: 42.2159
+INFO (CarpetX):   average cell updates per second: 172916
+INFO (CarpetX): OutputGH: iteration 53, time 0.207031, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.207031   Iterations per second: 42.2893   Simulation time per second: 0.165193
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173217
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.25532 sec
+INFO (CarpetX):   total evolution compute time:    1.25446 sec
+INFO (CarpetX):   total evolution output time:     0.000859261 sec
+INFO (CarpetX):   total iterations:                53
+INFO (CarpetX):   total cells updated:             217088
+INFO (CarpetX):   average iterations per second: 42.2204
+INFO (CarpetX):   average cell updates per second: 172935
+INFO (CarpetX): OutputGH: iteration 54, time 0.210938, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.210938   Iterations per second: 42.2742   Simulation time per second: 0.165134
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173155
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.27905 sec
+INFO (CarpetX):   total evolution compute time:    1.27818 sec
+INFO (CarpetX):   total evolution output time:     0.000873327 sec
+INFO (CarpetX):   total iterations:                54
+INFO (CarpetX):   total cells updated:             221184
+INFO (CarpetX):   average iterations per second: 42.2189
+INFO (CarpetX):   average cell updates per second: 172929
+INFO (CarpetX): OutputGH: iteration 55, time 0.214844, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.214844   Iterations per second: 42.2719   Simulation time per second: 0.165125
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173146
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.30272 sec
+INFO (CarpetX):   total evolution compute time:    1.30183 sec
+INFO (CarpetX):   total evolution output time:     0.000890493 sec
+INFO (CarpetX):   total iterations:                55
+INFO (CarpetX):   total cells updated:             225280
+INFO (CarpetX):   average iterations per second: 42.2195
+INFO (CarpetX):   average cell updates per second: 172931
+INFO (CarpetX): OutputGH: iteration 56, time 0.218750, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.21875   Iterations per second: 42.2863   Simulation time per second: 0.165181
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173205
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.32629 sec
+INFO (CarpetX):   total evolution compute time:    1.32539 sec
+INFO (CarpetX):   total evolution output time:     0.000907421 sec
+INFO (CarpetX):   total iterations:                56
+INFO (CarpetX):   total cells updated:             229376
+INFO (CarpetX):   average iterations per second: 42.223
+INFO (CarpetX):   average cell updates per second: 172945
+INFO (CarpetX): OutputGH: iteration 57, time 0.222656, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.222656   Iterations per second: 42.2905   Simulation time per second: 0.165197
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173222
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.34992 sec
+INFO (CarpetX):   total evolution compute time:    1.349 sec
+INFO (CarpetX):   total evolution output time:     0.000921488 sec
+INFO (CarpetX):   total iterations:                57
+INFO (CarpetX):   total cells updated:             233472
+INFO (CarpetX):   average iterations per second: 42.2248
+INFO (CarpetX):   average cell updates per second: 172953
+INFO (CarpetX): OutputGH: iteration 58, time 0.226562, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.226562   Iterations per second: 42.3021   Simulation time per second: 0.165243
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173269
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.3735 sec
+INFO (CarpetX):   total evolution compute time:    1.37256 sec
+INFO (CarpetX):   total evolution output time:     0.000935555 sec
+INFO (CarpetX):   total iterations:                58
+INFO (CarpetX):   total cells updated:             237568
+INFO (CarpetX):   average iterations per second: 42.2279
+INFO (CarpetX):   average cell updates per second: 172966
+INFO (CarpetX): OutputGH: iteration 59, time 0.230469, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.230469   Iterations per second: 42.3131   Simulation time per second: 0.165285
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173314
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.39708 sec
+INFO (CarpetX):   total evolution compute time:    1.39612 sec
+INFO (CarpetX):   total evolution output time:     0.000953674 sec
+INFO (CarpetX):   total iterations:                59
+INFO (CarpetX):   total cells updated:             241664
+INFO (CarpetX):   average iterations per second: 42.231
+INFO (CarpetX):   average cell updates per second: 172978
+INFO (CarpetX): OutputGH: iteration 60, time 0.234375, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.234375   Iterations per second: 42.3218   Simulation time per second: 0.165319
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173350
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.42066 sec
+INFO (CarpetX):   total evolution compute time:    1.41969 sec
+INFO (CarpetX):   total evolution output time:     0.000970602 sec
+INFO (CarpetX):   total iterations:                60
+INFO (CarpetX):   total cells updated:             245760
+INFO (CarpetX):   average iterations per second: 42.2338
+INFO (CarpetX):   average cell updates per second: 172990
+INFO (CarpetX): OutputGH: iteration 61, time 0.238281, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.238281   Iterations per second: 42.3138   Simulation time per second: 0.165288
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173317
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.44433 sec
+INFO (CarpetX):   total evolution compute time:    1.44335 sec
+INFO (CarpetX):   total evolution output time:     0.000986576 sec
+INFO (CarpetX):   total iterations:                61
+INFO (CarpetX):   total cells updated:             249856
+INFO (CarpetX):   average iterations per second: 42.234
+INFO (CarpetX):   average cell updates per second: 172990
+INFO (CarpetX): OutputGH: iteration 62, time 0.242188, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.242188   Iterations per second: 42.3267   Simulation time per second: 0.165339
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173370
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.4679 sec
+INFO (CarpetX):   total evolution compute time:    1.46689 sec
+INFO (CarpetX):   total evolution output time:     0.0010035 sec
+INFO (CarpetX):   total iterations:                62
+INFO (CarpetX):   total cells updated:             253952
+INFO (CarpetX):   average iterations per second: 42.2373
+INFO (CarpetX):   average cell updates per second: 173004
+INFO (CarpetX): OutputGH: iteration 63, time 0.246094, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.246094   Iterations per second: 42.327   Simulation time per second: 0.16534
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 173371
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.49152 sec
+INFO (CarpetX):   total evolution compute time:    1.4905 sec
+INFO (CarpetX):   total evolution output time:     0.00102139 sec
+INFO (CarpetX):   total iterations:                63
+INFO (CarpetX):   total cells updated:             258048
+INFO (CarpetX):   average iterations per second: 42.2388
+INFO (CarpetX):   average cell updates per second: 173010
+INFO (CarpetX): OutputGH: iteration 64, time 0.250000, run time 1 s
+INFO (CarpetX): OutputGH done.
+INFO (CarpetX): Simulation time: 0.25   Iterations per second: 40.0968   Simulation time per second: 0.156628
+INFO (CarpetX): Grid cells: 4096   Grid cell updates per second: 164236
+INFO (CarpetX): Performance:
+INFO (CarpetX):   total evolution time:            1.52829 sec
+INFO (CarpetX):   total evolution compute time:    1.51661 sec
+INFO (CarpetX):   total evolution output time:     0.0116763 sec
+INFO (CarpetX):   total iterations:                64
+INFO (CarpetX):   total cells updated:             262144
+INFO (CarpetX):   average iterations per second: 41.877
+INFO (CarpetX):   average cell updates per second: 171528
+INFO (CarpetX): Shutting down...
+AMReX (25.11) finalized
+--------------------------------------------------------------------------------
+Done.
+
+real	0m1.911s
+user	0m3.115s
+sys	0m0.203s
++ echo Stopping:
+Stopping:
++ date
+Thu Apr  9 04:55:38 AM UTC 2026
++ echo Done.
+Done.
+  Elapsed time: 1.9 s
