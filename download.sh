@@ -13,7 +13,7 @@ chmod a+x GetComponents
 
 # FIXME curl and wget are not working with Bitbucket raw thornlist in the container somehow
 # I've manually added the thornlist to bypass the download
-# https://bitbucket.org/canuda/canudax_lean/raw/e87bf725cc1e90347a3ddc05bb03eca1567b71fa/CanudaX.th
+# https://bitbucket.org/canuda/canudax/raw/2afeeaf03ce2d79a8d3555b06bed1c95321ef49c/CanudaX.th
 
 # Get thorns from master thornlist
 ./GetComponents --no-parallel --shallow $CANUDAXSPACE/CanudaX.th
