@@ -1,0 +1,43 @@
+   canudax_npscalars-nppsi4i_group.it000000.x.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4i_group.it000000.y.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4i_group.it000000.z.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4i_group.it000016.x.tsv: substantial differences
+      significant differences on 42 (out of 71) lines
+      maximum absolute difference in column 11 is 5.04644200829694e-08
+      maximum relative difference in column 11 is 80.0847977971053
+      (insignificant differences on 29 lines)
+   canudax_npscalars-nppsi4i_group.it000016.y.tsv: substantial differences
+      significant differences on 43 (out of 71) lines
+      maximum absolute difference in column 11 is 3.51708006656471e-08
+      maximum relative difference in column 11 is 56.3664607465299
+      (insignificant differences on 28 lines)
+   canudax_npscalars-nppsi4i_group.it000016.z.tsv: substantial differences
+      significant differences on 30 (out of 71) lines
+      maximum absolute difference in column 11 is 5.04644200829694e-08
+      maximum relative difference in column 11 is 5.56781287038783e-05
+      (insignificant differences on 41 lines)
+   canudax_npscalars-nppsi4r_group.it000000.x.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4r_group.it000000.y.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4r_group.it000000.z.tsv: differences below tolerance on 71 lines
+   canudax_npscalars-nppsi4r_group.it000016.x.tsv: substantial differences
+      significant differences on 23 (out of 71) lines
+      maximum absolute difference in column 11 is 3.21380865174969e-08
+      maximum relative difference in column 11 is 6.07960881939361e-05
+      (insignificant differences on 48 lines)
+   canudax_npscalars-nppsi4r_group.it000016.y.tsv: substantial differences
+      significant differences on 27 (out of 71) lines
+      maximum absolute difference in column 11 is 3.56453759569762e-08
+      maximum relative difference in column 11 is 6.74294312647741e-05
+      (insignificant differences on 44 lines)
+   canudax_npscalars-nppsi4r_group.it000016.z.tsv: substantial differences
+      significant differences on 54 (out of 71) lines
+      maximum absolute difference in column 11 is 6.12184283708614e-08
+      maximum relative difference in column 11 is 5.02618418261302
+      (insignificant differences on 17 lines)
+   mp_Psi4_l2_m-1_r3.00.tsv: differences below tolerance on 17 lines
+   mp_Psi4_l2_m-2_r3.00.tsv: differences below tolerance on 17 lines
+   mp_Psi4_l2_m0_r3.00.tsv: differences below tolerance on 17 lines
+   mp_Psi4_l2_m1_r3.00.tsv: differences below tolerance on 17 lines
+   mp_Psi4_l2_m2_r3.00.tsv: differences below tolerance on 17 lines
+
+
