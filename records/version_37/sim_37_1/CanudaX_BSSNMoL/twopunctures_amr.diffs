@@ -1,0 +1,23 @@
+   mp_Psi4_l2_m-1_r8.00.tsv: differences below tolerance on 2 lines
+   mp_Psi4_l2_m-2_r8.00.tsv: substantial differences
+      significant differences on 2 (out of 2) lines
+      maximum absolute difference in column 2 is 1.72119879845767e-08
+      maximum absolute difference in column 3 is 5.47564669369497e-19
+      maximum relative difference in column 2 is 0.000142500380962989
+      maximum relative difference in column 3 is 0.0763729613533676
+   mp_Psi4_l2_m0_r8.00.tsv: substantial differences
+      significant differences on 1 (out of 2) lines
+      maximum absolute difference in column 2 is 1.43262757214778e-08
+      maximum absolute difference in column 3 is 4.81284226430969e-18
+      maximum relative difference in column 2 is 0.000144515309098608
+      maximum relative difference in column 3 is 0.673261212688821
+      (insignificant differences on 1 lines)
+   mp_Psi4_l2_m1_r8.00.tsv: differences below tolerance on 2 lines
+   mp_Psi4_l2_m2_r8.00.tsv: substantial differences
+      significant differences on 2 (out of 2) lines
+      maximum absolute difference in column 2 is 1.72119879797926e-08
+      maximum absolute difference in column 3 is 3.270232975963e-18
+      maximum relative difference in column 2 is 0.000142500380923368
+      maximum relative difference in column 3 is 1.70041649758026
+
+
