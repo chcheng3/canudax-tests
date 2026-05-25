@@ -124,7 +124,7 @@ ExternalLibraries/Boost
 !TARGET   = $ARR
 !TYPE     = git
 !URL      = https://github.com/lwji/CarpetX.git
-!REPO_BRANCH = development
+!REPO_BRANCH = dev
 !REPO_PATH = $2
 !CHECKOUT =
 CarpetX/ADMBaseX
@@ -194,7 +194,7 @@ CarpetX/TmunuBaseX
 !TARGET   = $ARR
 !TYPE     = git
 !URL      = https://github.com/lwji/spacetimex.git
-!REPO_BRANCH = development
+!REPO_BRANCH = dev
 !REPO_PATH= $2
 !CHECKOUT =
 SpacetimeX/AHFinderDirect
