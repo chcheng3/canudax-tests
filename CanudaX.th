@@ -146,7 +146,6 @@ CarpetX/ODESolvers
 # CarpetX/SIMDWaveToyX
 # CarpetX/SpacetimeWaveToyX
 # CarpetX/StaggeredWaveToyX
-CarpetX/Subcycling
 # CarpetX/TestArrayGroup
 # CarpetX/TestBoundaries
 # CarpetX/TestBoxInBox
